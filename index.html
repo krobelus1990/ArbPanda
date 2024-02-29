@@ -3488,9 +3488,45 @@
 		.buyBtn{
 			transition: 0.1s;
 		}
-		#buyModal{
-			
+		.top_page{
+			/* background-image: url(./assets/images/topbg.png); */
 		}
+		.intro{
+			height: fit-content;
+			background-image: url(./assets/images/Bg2.png);
+		}
+		.tokenomics{
+			background-size: 100%;
+			background-image: url(./assets/images/Bg3.png);
+		}
+		.marquee {
+  height: 25px;
+  width: 100%;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  height: 30px;
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 7s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
 		@media (max-width:1024px) {			
 			#buyModal{
 			   margin: auto !important;
@@ -3498,6 +3534,7 @@
 			}
 			.pandaImg{
 				display: flex !important;
+		
 			}
 			.pandaImg img{
 				margin: auto !important;
@@ -3506,6 +3543,28 @@
 				padding-left: 0 !important;
 				padding-right: 0 !important;
 				gap: 20px;
+			}
+			.toppage{
+		        flex-direction: column !important;
+				margin: 0 !important;
+				gap: 50px !important;
+			}
+			.res6{
+				margin-left: 50px !important;
+				width: 70%;
+			}
+			.res7{
+				display: none !important;
+			}
+		}
+		@media (max-width:1600px) {			
+			.res4{
+				font-size: 35px !important;
+			}
+		}
+		@media (max-width:1400px) {			
+			.res6{
+				margin-left: 100px !important;
 			}
 		}
 		@media (max-width:768px) {			
@@ -3516,9 +3575,41 @@
 			}
 			.res2{
 				width: 90% !important;
+				margin-top: 0 !important;
 			}
 			.buyModal{
 				width: 370px;
+			}
+			.pandaImg{
+				width: 80% !important;
+			}
+			.toppage{
+		        flex-direction: column !important;
+				margin: 0 !important;
+				gap: 50px !important;
+			}
+			.res3{
+				width: 70% !important;
+			}
+			.res4{
+				font-size: 30px !important;
+			}
+			.res5{
+				width: 90% !important;
+			}
+			.res6{
+				margin-left: 10px !important;
+				width: 100% !important;
+			}
+			.res7{
+				display: none !important;
+			}
+			.res8{
+				font-size: 10px !important;
+				padding: 5px !important;
+			}
+			.res9{
+				display: none !important;
 			}
 		}
 		@media (max-width:375px) {			
@@ -3530,7 +3621,21 @@
 			.res3{
 				line-height: 45px !important;
 			}
+			.res7{
+				display: none !important;
+			}
 		}
+		@media (max-width:475px) {			
+		.top_button1 img{
+		width: 50% !important;
+		}
+		.top_button2 img{
+		width: 90% !important;
+		}
+		.res7{
+				display: none !important;
+			}
+	}
 	</style>
 	</head>
 
@@ -3541,7 +3646,7 @@
 		elementor-default elementor-kit-5 elementor-page elementor-page-9 ast-desktop
 		e--ua-blink e--ua-chrome e--ua-webkit" data-elementor-device-mode="desktop">
 		<div class="hfeed site" id="page">
-			<header id="masthead" itemscope="itemscope"
+			<!-- <header id="masthead" itemscope="itemscope"
 				itemtype="https://schema.org/WPHeader">
 				<div data-elementor-type="wp-post" data-elementor-id="24" class="elementor
 					elementor-24">
@@ -3581,10 +3686,18 @@
 												display: inline-block
 											}
 										</style>
-											<img fetchpriority="high" width="1024" height="1024"
-												src="./assets/images/logo.png" class="elementor-animation-shrink
-												attachment-large size-large
-												wp-image-28" alt="" sizes="(max-width: 1024px) 100vw, 1024px">
+											<div style="display: flex; gap: 30px; margin-top: 30px;">
+												<img fetchpriority="high" width="1024" height="1024"
+													src="./assets/images/twitter1.png"
+													class="elementor-animation-shrink
+													attachment-large size-large
+													wp-image-28" alt="" sizes="(max-width: 1024px) 100vw, 1024px" style="width: 60px;">
+												<img fetchpriority="high" width="1024" height="1024"
+													src="./assets/images/telegram1.png"
+													class="elementor-animation-shrink
+													attachment-large size-large
+													wp-image-28" alt="" sizes="(max-width: 1024px) 100vw, 1024px" style="width: 60px;">
+											</div>
 										</div>
 									</div>
 								</div>
@@ -3663,20 +3776,15 @@
 															parent hfe-creative-menu">
 															<a href="#about" class="hfe-menu-item">About</a>
 														</li>
-														<li id="menu-item-34" class="menu-item menu-item-type-custom
-															menu-item-object-custom
-															parent hfe-creative-menu">
-															<a href="#tokenomics" class="hfe-menu-item">Tokenomics</a>
-														</li>
 														<li id="menu-item-35" class="menu-item menu-item-type-custom
 															menu-item-object-custom
 															parent hfe-creative-menu">
 															<a href="#roadmap" class="hfe-menu-item">Roadmap</a>
 														</li>
-														<li id="menu-item-36" class="menu-item menu-item-type-custom
+														<li id="menu-item-34" class="menu-item menu-item-type-custom
 															menu-item-object-custom
 															parent hfe-creative-menu">
-															<a class="hfe-menu-item" onclick="airdropModalOpen()">Airdrop</a>
+															<a href="#tokenomics" class="hfe-menu-item">Tokenomics</a>
 														</li>
 													</ul>
 												</nav>
@@ -3695,15 +3803,7 @@
 										data-id="7fb40d44"
 										data-element_type="widget" data-widget_type="button.default">
 										<div class="elementor-widget-container">
-											<div class="elementor-button-wrapper">
-												<a class="elementor-button elementor-button-link elementor-size-sm
-													elementor-animation-shrink" onclick="" target="_self">
-													<span class="elementor-button-content-wrapper">
-														<span class="elementor-button-text" style="cursor: pointer;"
-															onclick="buyModalOpen()">Buy Now</span>
-													</span>
-												</a>
-											</div>
+											<img src="./assets/images/image2.png" alt="">
 										</div>
 									</div>
 								</div>
@@ -3711,8 +3811,7 @@
 						</div>
 					</section>
 				</div>
-			</header>
-
+			</header> -->
 			<div id="content" class="site-content">
 				<div class="ast-container">
 
@@ -3729,869 +3828,282 @@
 								</header> <!-- .entry-header -->
 
 
-								<div class="entry-content clear" itemprop="text">
+								<div class="entry-content clear" itemprop="text"
+									style="background-color: #282828;">
 
 
 									<div data-elementor-type="wp-page" data-elementor-id="9"
 										class="elementor elementor-9">
-										<section id="airdropModalOpen" style="display: none; justify-content:
-											center; align-items:center; width: auto;">
-											<div class="buyModal" style=" background-color: rgb(24,24,27);
-												border-radius:1rem 1rem 1rem 1rem;">
-												<div style="display: flex; flex-direction: column;
-													align-items:center; justify-content: center; border: 3px solid
-													white;
-
-													border-radius: 1rem; margin: auto; padding: 35px;">
-													<div
-														style="background-color: rgb(24,24,27); display: flex;
-														flex-direction:column; align-items: center; border-radius: 1rem
-														1rem 0 0; width:100%;">
-														<div
-															style="display: flex; flex-direction: column; align-items:center;
-															justify-content: center; padding: 0.5rem 2rem;">
-															<span style="display: flex; color: white;
-																font-family:Grandstander; margin-top: 10px;
-																font-weight: 700; font-size: 22px;">First Airdrop Task</span>
-														</div>
-														<span style=" width: 400px; color: white;">
-															Click the Twitter button to navigate to our Twitter page. Copy
-															our Twitter link with the copy button if the Twitter button
-															doesn't work. Go to X, Follow us, Quote our pinned tweet, tag
-															three friends, and add our hashtag: $BEN10 or #BEN10 then post
-															the tweet.
-														</span>
-														<span style=" width: 400px; color: white; margin-top: 30px;">
-															After publishing your tweet, tap on share, copy the link (URL) to
-															the tweet and submit here.
-														</span>
-														<div style="display: flex; width: 100%; gap: 30px;
-															justify-content: center; align-items: center; margin-top: 20px;
-															margin-bottom: 20px;">
-															<button style="width: 40%; display: flex; color: white;
-																justify-content: center; align-items: center; background-color:
-																rgb(24,24,27); box-shadow: 0.5px 0.5px 5.5px 0.5px rgb(177, 177,
-																177)">
-																TWITTER
-															</button>
-															<button style="width: 40%; display: flex; color: white;
-																justify-content: center; align-items: center; background-color:
-																rgb(24,24,27); box-shadow: 0.5px 0.5px 5.5px 0.5px rgb(177, 177,
-																177)">
-																COPY LINK
-															</button>
-														</div>
-													</div>
-													<div
-														style=" display: flex; background-color: rgb(24,24,27); ">
-														<div
-															style="display: flex; align-items:center;
-															justify-content:center;">
-
-															<div style="display: flex; flex-direction: column;
-																align-items:center; justify-content: center; margin-bottom:
-																1.5rem;
-
-																width: 300px;">
-																<span style="color: white;">Enter the link to your retweet</span>
-																<div style="display: flex; flex-direction: column;
-																	border-radius: 0.5rem; background-color: rgb(24,24,27);
-																	padding: 0.5rem 1rem; box-shadow: 0.5px 0.5px 5.5px 0.5px
-																	rgb(177, 177, 177);
-																	">
-																	<div style="display: flex; justify-content: center;
-																		align-items: center;">
-																		<input style="border: none; background-color: rgb(24,24,27);
-																			outline: none; appearance: none; width: 80%; height: 30px;"
-																			type="text">
-																		<img loading="lazy" src="assets/images/twitter.webp"
-																			alt="Doge" style="height: 1.9rem;" />
-																	</div>
-																</div>
-															</div>
-														</div>
-
-														<div style="display: flex; background-color: rgb(177, 177, 177);
-															margin: 1rem auto; justify-content: space-between; width: 90%;
-															height: 1px;"></div>
-
-													</div>
-													<div style="display: flex; width: 100%; justify-content: center;
-														align-items: center; margin-top: 10px; margin-bottom: 20px; ">
-														<button style="width: 90%; display: flex; color: white;
-															justify-content: center; align-items: center; background-color:
-															rgb(24,24,27); box-shadow: 0.5px 0.5px 5.5px 0.5px rgb(177, 177,
-															177)">
-															Next Task
-														</button>
-													</div>
-												</div>
-
-											</div>
-										</section>
-										<section class="has_eae_slider elementor-section elementor-top-section
+										<section style=" padding: 0; display: flex; flex-direction: column;
+											width: 100%;" class=" top_page has_eae_slider
+											elementor-section
+											elementor-top-section
 											elementor-element elementor-element-79f7b0f6 elementor-section-boxed
 											elementor-section-height-default elementor-section-height-default"
 											data-id="79f7b0f6"
 											data-element_type="section"
 											data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-											<div class="elementor-container elementor-column-gap-default">
-												<div class="has_eae_slider elementor-column elementor-col-50
-													elementor-top-column elementor-element elementor-element-15ed5efa"
-													data-id="15ed5efa"
-													data-element_type="column">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<section class="has_eae_slider elementor-section
-															elementor-inner-section
-															elementor-element elementor-element-14e7a606
-															elementor-section-boxed elementor-section-height-default
-															elementor-section-height-default" data-id="14e7a606"
-															data-element_type="section">
-															<div class="elementor-container elementor-column-gap-default"
-																style="display: flex; flex-direction: column; margin-top:
-																-50px;">
-																<div class="elementor-widget-container pandaImg">
-																	<img decoding="async" width="312"
-																		height="312"
-																		src="./assets/images/png_panda_3688.png"
-																		class="attachment-large size-large wp-image-50"
-																		alt=""
-																		sizes="(max-width: 312px) 100vw, 312px"
-																		>
-																</div>
-																<div class="has_eae_slider elementor-column elementor-col-100
-																	elementor-inner-column elementor-element
-																	elementor-element-3969801a" data-id="3969801a"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-7b559f6e
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="7b559f6e" data-element_type="widget"
-																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<style>
-																				/*! elementor - v3.19.0 - 29-01-2024 */
-																				.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
-																					background-color: #69727d;
-																					color: #fff
-																				}
-
-																				.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
-																					color: #69727d;
-																					border: 3px solid;
-																					background-color: transparent
-																				}
-
-																				.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
-																					margin-top: 8px
-																				}
-
-																				.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
-																					width: 1em;
-																					height: 1em
-																				}
-
-																				.elementor-widget-text-editor .elementor-drop-cap {
-																					float: left;
-																					text-align: center;
-																					line-height: 1;
-																					font-size: 50px
-																				}
-
-																				.elementor-widget-text-editor .elementor-drop-cap-letter {
-																					display: inline-block
-																				}
-																			</style>
-																				<p style="font-size: 35px;">Welcome to</p>
-																			</div>
-																		</div>
-																		<div class="elementor-element elementor-element-6d7779e2
-																			elementor-widget elementor-widget-image" data-id="6d7779e2"
-																			data-element_type="widget"
-																			data-widget_type="image.default">
-																			<div class="elementor-widget-container" style=" margin-top:
-																				50px;">
-																				<!-- <img decoding="async" width="1024"
-																				height="205"
-																				src="./assets/Cat-300-x-200-px-400-x-200-px-400-x-150-px-400-x-80-px1-1024x205.png"
-																				class="attachment-large size-large wp-image-91"
-																				alt=""
-																				sizes="(max-width: 1024px) 100vw, 1024px"> -->
-																				<span
-																					style=" color: white; font-size: 60px;
-																					font-family:Grandstander; font-weight: bold; margin-left:
-																					50px;">ArbPanda</span>
-																			</div>
-																		</div>
-																		<div class="elementor-element elementor-element-15e8a2cc
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="15e8a2cc" data-element_type="widget"
-																			data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</section>
-														<section class="has_eae_slider elementor-section
-															elementor-inner-section
-															elementor-element elementor-element-79c283a9
-															elementor-section-boxed elementor-section-height-default
-															elementor-section-height-default" data-id="79c283a9"
-															data-element_type="section">
-															<div class="elementor-container elementor-column-gap-default">
-																<div class="has_eae_slider elementor-column elementor-col-33
-																	elementor-inner-column elementor-element
-																	elementor-element-1c679bfb" data-id="1c679bfb"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-16dbaaa9
-																			elementor-align-justify elementor-widget
-																			elementor-widget-button" data-id="16dbaaa9"
-																			data-element_type="widget"
-																			data-widget_type="button.default">
-																			<div class="elementor-widget-container">
-																				<div class="elementor-button-wrapper">
-																					<a class="elementor-button elementor-button-link
-																						elementor-size-sm elementor-animation-shrink" href="#"
-																						target="_self">
-																						<span
-																							class="elementor-button-content-wrapper">
-																							<span
-																								class="elementor-button-text"
-																								onclick="buyModalOpen()">Buy
-																								Now</span>
-																						</span>
-																					</a>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="has_eae_slider elementor-column elementor-col-33
-																	elementor-inner-column elementor-element
-																	elementor-element-727e9443" data-id="727e9443"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-6f9cf023
-																			elementor-align-justify elementor-widget
-																			elementor-widget-button" data-id="6f9cf023"
-																			data-element_type="widget"
-																			data-widget_type="button.default">
-																			<div class="elementor-widget-container">
-																				<div class="elementor-button-wrapper">
-																					<a class="elementor-button elementor-button-link
-																						elementor-size-sm elementor-animation-shrink">
-																						<span
-																							class="elementor-button-content-wrapper">
-																							<span
-																								class="elementor-button-text"
-																								onclick="airdropModalOpen()">Airdrop</span>
-																						</span>
-																					</a>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="has_eae_slider elementor-column elementor-col-33
-																	elementor-inner-column elementor-element
-																	elementor-element-30ca44b9" data-id="30ca44b9"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-3af866e2
-																			elementor-shape-circle e-grid-align-mobile-center
-																			e-grid-align-left elementor-grid-0 elementor-widget
-																			elementor-widget-social-icons" data-id="3af866e2"
-																			data-element_type="widget"
-																			data-settings="{&quot;_animation&quot;:&quot;none&quot;}"
-																			data-widget_type="social-icons.default">
-																			<div class="elementor-widget-container">
-																				<style>
-																				/*! elementor - v3.19.0 - 29-01-2024 */
-																				.elementor-widget-social-icons.elementor-grid-0 .elementor-widget-container,
-																				.elementor-widget-social-icons.elementor-grid-mobile-0 .elementor-widget-container,
-																				.elementor-widget-social-icons.elementor-grid-tablet-0 .elementor-widget-container {
-																					line-height: 1;
-																					font-size: 0
-																				}
-
-																				.elementor-widget-social-icons:not(.elementor-grid-0):not(.elementor-grid-tablet-0):not(.elementor-grid-mobile-0) .elementor-grid {
-																					display: inline-grid
-																				}
-
-																				.elementor-widget-social-icons .elementor-grid {
-																					grid-column-gap: var(--grid-column-gap, 5px);
-																					grid-row-gap: var(--grid-row-gap, 5px);
-																					grid-template-columns: var(--grid-template-columns);
-																					justify-content: var(--justify-content, center);
-																					justify-items: var(--justify-content, center)
-																				}
-
-																				.elementor-icon.elementor-social-icon {
-																					font-size: var(--icon-size, 25px);
-																					line-height: var(--icon-size, 25px);
-																					width: calc(var(--icon-size, 25px) + 2 * var(--icon-padding, .5em));
-																					height: calc(var(--icon-size, 25px) + 2 * var(--icon-padding, .5em))
-																				}
-
-																				.elementor-social-icon {
-																					--e-social-icon-icon-color: #fff;
-																					display: inline-flex;
-																					background-color: #69727d;
-																					align-items: center;
-																					justify-content: center;
-																					text-align: center;
-																					cursor: pointer
-																				}
-
-																				.elementor-social-icon i {
-																					color: var(--e-social-icon-icon-color)
-																				}
-
-																				.elementor-social-icon svg {
-																					fill: var(--e-social-icon-icon-color)
-																				}
-
-																				.elementor-social-icon:last-child {
-																					margin: 0
-																				}
-
-																				.elementor-social-icon:hover {
-																					opacity: .9;
-																					color: #fff
-																				}
-
-																				.elementor-social-icon-android {
-																					background-color: #a4c639
-																				}
-
-																				.elementor-social-icon-apple {
-																					background-color: #999
-																				}
-
-																				.elementor-social-icon-behance {
-																					background-color: #1769ff
-																				}
-
-																				.elementor-social-icon-bitbucket {
-																					background-color: #205081
-																				}
-
-																				.elementor-social-icon-codepen {
-																					background-color: #000
-																				}
-
-																				.elementor-social-icon-delicious {
-																					background-color: #39f
-																				}
-
-																				.elementor-social-icon-deviantart {
-																					background-color: #05cc47
-																				}
-
-																				.elementor-social-icon-digg {
-																					background-color: #005be2
-																				}
-
-																				.elementor-social-icon-dribbble {
-																					background-color: #ea4c89
-																				}
-
-																				.elementor-social-icon-elementor {
-																					background-color: #d30c5c
-																				}
-
-																				.elementor-social-icon-envelope {
-																					background-color: #ea4335
-																				}
-
-																				.elementor-social-icon-facebook,
-																				.elementor-social-icon-facebook-f {
-																					background-color: #3b5998
-																				}
-
-																				.elementor-social-icon-flickr {
-																					background-color: #0063dc
-																				}
-
-																				.elementor-social-icon-foursquare {
-																					background-color: #2d5be3
-																				}
-
-																				.elementor-social-icon-free-code-camp,
-																				.elementor-social-icon-freecodecamp {
-																					background-color: #006400
-																				}
-
-																				.elementor-social-icon-github {
-																					background-color: #333
-																				}
-
-																				.elementor-social-icon-gitlab {
-																					background-color: #e24329
-																				}
-
-																				.elementor-social-icon-globe {
-																					background-color: #69727d
-																				}
-
-																				.elementor-social-icon-google-plus,
-																				.elementor-social-icon-google-plus-g {
-																					background-color: #dd4b39
-																				}
-
-																				.elementor-social-icon-houzz {
-																					background-color: #7ac142
-																				}
-
-																				.elementor-social-icon-instagram {
-																					background-color: #262626
-																				}
-
-																				.elementor-social-icon-jsfiddle {
-																					background-color: #487aa2
-																				}
-
-																				.elementor-social-icon-link {
-																					background-color: #818a91
-																				}
-
-																				.elementor-social-icon-linkedin,
-																				.elementor-social-icon-linkedin-in {
-																					background-color: #0077b5
-																				}
-
-																				.elementor-social-icon-medium {
-																					background-color: #00ab6b
-																				}
-
-																				.elementor-social-icon-meetup {
-																					background-color: #ec1c40
-																				}
-
-																				.elementor-social-icon-mixcloud {
-																					background-color: #273a4b
-																				}
-
-																				.elementor-social-icon-odnoklassniki {
-																					background-color: #f4731c
-																				}
-
-																				.elementor-social-icon-pinterest {
-																					background-color: #bd081c
-																				}
-
-																				.elementor-social-icon-product-hunt {
-																					background-color: #da552f
-																				}
-
-																				.elementor-social-icon-reddit {
-																					background-color: #ff4500
-																				}
-
-																				.elementor-social-icon-rss {
-																					background-color: #f26522
-																				}
-
-																				.elementor-social-icon-shopping-cart {
-																					background-color: #4caf50
-																				}
-
-																				.elementor-social-icon-skype {
-																					background-color: #00aff0
-																				}
-
-																				.elementor-social-icon-slideshare {
-																					background-color: #0077b5
-																				}
-
-																				.elementor-social-icon-snapchat {
-																					background-color: #fffc00
-																				}
-
-																				.elementor-social-icon-soundcloud {
-																					background-color: #f80
-																				}
-
-																				.elementor-social-icon-spotify {
-																					background-color: #2ebd59
-																				}
-
-																				.elementor-social-icon-stack-overflow {
-																					background-color: #fe7a15
-																				}
-
-																				.elementor-social-icon-steam {
-																					background-color: #00adee
-																				}
-
-																				.elementor-social-icon-stumbleupon {
-																					background-color: #eb4924
-																				}
-
-																				.elementor-social-icon-telegram {
-																					background-color: #2ca5e0
-																				}
-
-																				.elementor-social-icon-thumb-tack {
-																					background-color: #1aa1d8
-																				}
-
-																				.elementor-social-icon-tripadvisor {
-																					background-color: #589442
-																				}
-
-																				.elementor-social-icon-tumblr {
-																					background-color: #35465c
-																				}
-
-																				.elementor-social-icon-twitch {
-																					background-color: #6441a5
-																				}
-
-																				.elementor-social-icon-twitter {
-																					background-color: #1da1f2
-																				}
-
-																				.elementor-social-icon-viber {
-																					background-color: #665cac
-																				}
-
-																				.elementor-social-icon-vimeo {
-																					background-color: #1ab7ea
-																				}
-
-																				.elementor-social-icon-vk {
-																					background-color: #45668e
-																				}
-
-																				.elementor-social-icon-weibo {
-																					background-color: #dd2430
-																				}
-
-																				.elementor-social-icon-weixin {
-																					background-color: #31a918
-																				}
-
-																				.elementor-social-icon-whatsapp {
-																					background-color: #25d366
-																				}
-
-																				.elementor-social-icon-wordpress {
-																					background-color: #21759b
-																				}
-
-																				.elementor-social-icon-xing {
-																					background-color: #026466
-																				}
-
-																				.elementor-social-icon-yelp {
-																					background-color: #af0606
-																				}
-
-																				.elementor-social-icon-youtube {
-																					background-color: #cd201f
-																				}
-
-																				.elementor-social-icon-500px {
-																					background-color: #0099e5
-																				}
-
-																				.elementor-shape-rounded .elementor-icon.elementor-social-icon {
-																					border-radius: 10%
-																				}
-
-																				.elementor-shape-circle .elementor-icon.elementor-social-icon {
-																					border-radius: 50%
-																				}
-																			</style>
-																				<div
-																					class="elementor-social-icons-wrapper elementor-grid">
-																					<span class="elementor-grid-item">
-																						<a class="elementor-icon elementor-social-icon
-																							elementor-social-icon-twitter elementor-animation-shrink
-																							elementor-repeater-item-222dd7a"
-																							href="https://twitter.com/Arbpanda" target="_blank">
-																							<span
-																								class="elementor-screen-only">Twitter</span>
-																							<svg class="e-font-icon-svg e-fab-twitter"
-																								viewBox="0 0 512 512"
-																								xmlns="http://www.w3.org/2000/svg">
-																								<path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645
-																									0
-																									138.72-105.583 298.558-298.558 298.558-59.452
-																									0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299
-																									25.34 1.299 49.055 0 94.213-16.568
-																									130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772
-																									6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3
-																									27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969
-																									7.797 30.214 12.67 47.431
-																									13.319-28.264-18.843-46.781-51.005-46.781-87.391
-																									0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3
-																									105.258 216.365
-																									109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828
-																									46.782-104.934 104.934-104.934 30.213 0 57.502 12.67
-																									76.67 33.137 23.715-4.548 46.456-13.32
-																									66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827
-																									21.117-2.273 41.584-8.122 60.426-16.243-14.292
-																									20.791-32.161 39.308-52.628 54.253z">
-																								</path>
-																							</svg> </a>
-																					</span>
-																					<span class="elementor-grid-item">
-																						<a class="elementor-icon elementor-social-icon
-																							elementor-social-icon-telegram elementor-animation-shrink
-																							elementor-repeater-item-531e428"
-																							href="https://t.me/arbpandatoken" target="_blank">
-																							<span
-																								class="elementor-screen-only">Telegram</span>
-																							<svg class="e-font-icon-svg e-fab-telegram"
-																								viewBox="0 0 496 512"
-																								xmlns="http://www.w3.org/2000/svg">
-																								<path d="M248 8C111 8 0 119 0 256s111 248 248 248
-																									248-111
-																									248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3
-																									13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3
-																									3.3-6.1 6.1-12.5 6.1l4.4-63.1
-																									114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142
-																									89.4-61.2-19.1c-13.3-4.2-13.6-13.3
-																									2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z">
-																								</path>
-																							</svg> </a>
-																					</span>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</section>
-													</div>
-												</div>
-
-												<div class="has_eae_slider elementor-column elementor-col-50
-													elementor-top-column elementor-element elementor-element-2f7c730b"
-													data-id="2f7c730b"
-													data-element_type="column">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<!-- <section class="has_eae_slider elementor-section elementor-inner-section
-															elementor-element elementor-element-64774d59
-															elementor-section-boxed elementor-section-height-default
-															elementor-section-height-default" data-id="64774d59" data-element_type="section">
+											<header id="masthead" itemscope="itemscope"
+												itemtype="https://schema.org/WPHeader">
+												<div data-elementor-type="wp-post" data-elementor-id="24"
+													class="elementor
+													elementor-24">
+													<section style=" background:none;" class="has_eae_slider
+														elementor-section
+														elementor-top-section
+														elementor-element elementor-element-7aff9d18
+														elementor-hidden-tablet
+														elementor-hidden-mobile elementor-section-boxed
+														elementor-section-height-default elementor-section-height-default"
+														data-id="7aff9d18" data-element_type="section"
+														data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 														<div class="elementor-container elementor-column-gap-default">
-															<div class="has_eae_slider elementor-column elementor-col-100
-																	elementor-inner-column elementor-element
-																	elementor-element-41ce27ea" data-id="41ce27ea" data-element_type="column">
-																<div
-																	class="elementor-widget-wrap elementor-element-populated">
-																	<div class="elementor-element elementor-element-62cc48e
-																			elementor-widget elementor-widget-image" data-id="62cc48e" data-element_type="widget"
+															<div class="has_eae_slider elementor-column elementor-col-33
+																elementor-top-column elementor-element
+																elementor-element-395e73d5"
+																data-id="395e73d5"
+																data-element_type="column">
+																<div class="elementor-widget-wrap elementor-element-populated">
+																	<div class="elementor-element elementor-element-147b21f3
+																		elementor-widget elementor-widget-image" data-id="147b21f3"
+																		data-element_type="widget"
 																		data-widget_type="image.default">
 																		<div class="elementor-widget-container">
-																			<img decoding="async" width="512"
-																				height="512"
-																				src="./assets/images/png_panda_3688.png"
-																				class="attachment-large size-large wp-image-50"
-																				alt=""
-																				sizes="(max-width: 512px) 100vw, 512px">
+																			<style>
+											/*! elementor - v3.19.0 - 29-01-2024 */
+											.elementor-widget-image {
+												text-align: center
+											}
+
+											.elementor-widget-image a {
+												display: inline-block
+											}
+
+											.elementor-widget-image a img[src$=".svg"] {
+												width: 48px
+											}
+
+											.elementor-widget-image img {
+												vertical-align: middle;
+												display: inline-block
+											}
+										                                    </style>
+																			<div style="display: flex; gap: 30px; margin-top: 30px;">
+																				<img fetchpriority="high" width="1024" height="1024"
+																					src="./assets/images/twitter1.png"
+																					class="elementor-animation-shrink
+																					attachment-large size-large
+																					wp-image-28" alt="" sizes="(max-width: 1024px) 100vw,
+																					1024px" style="width: 60px;">
+																				<img fetchpriority="high" width="1024" height="1024"
+																					src="./assets/images/telegram1.png"
+																					class="elementor-animation-shrink
+																					attachment-large size-large
+																					wp-image-28" alt="" sizes="(max-width: 1024px) 100vw,
+																					1024px" style="width: 60px;">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="has_eae_slider elementor-column elementor-col-33
+																elementor-top-column elementor-element
+																elementor-element-1011abda"
+																data-id="1011abda"
+																data-element_type="column">
+																<div class="elementor-widget-wrap elementor-element-populated">
+																	<div class="elementor-element elementor-element-7df41a56
+																		hfe-nav-menu__align-right hfe-submenu-icon-classic
+																		hfe-submenu-animation-slide_up hfe-link-redirect-child
+																		hfe-nav-menu__breakpoint-tablet elementor-widget
+																		elementor-widget-navigation-menu" data-id="7df41a56"
+																		data-element_type="widget"
+																		data-settings="{&quot;dropdown_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;15&quot;,&quot;right&quot;:&quot;15&quot;,&quot;bottom&quot;:&quot;15&quot;,&quot;left&quot;:&quot;15&quot;,&quot;isLinked&quot;:true},&quot;toggle_size_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:25,&quot;sizes&quot;:[]},&quot;menu_row_space_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:30,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:17,&quot;sizes&quot;:[]},&quot;distance_from_menu_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:30,&quot;sizes&quot;:[]},&quot;menu_space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:9,&quot;sizes&quot;:[]},&quot;padding_horizontal_menu_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_horizontal_menu_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_menu_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_row_space&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_row_space_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;dropdown_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;dropdown_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;width_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;220&quot;,&quot;sizes&quot;:[]},&quot;width_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;width_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;distance_from_menu&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;distance_from_menu_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
+																		data-widget_type="navigation-menu.default">
+																		<div class="elementor-widget-container">
+																			<div class="hfe-nav-menu hfe-layout-horizontal
+																				hfe-nav-menu-layout
+																				horizontal hfe-pointer__underline hfe-animation__grow"
+																				data-layout="horizontal">
+																				<div role="button" class="hfe-nav-menu__toggle
+																					elementor-clickable"
+																					aria-haspopup="true" aria-expanded="false">
+																					<span class="screen-reader-text">Menu</span>
+																					<div class="hfe-nav-menu-icon">
+																						<svg aria-hidden="true" class="e-font-icon-svg
+																							e-fas-align-justify" viewBox="0 0 448 512"
+																							xmlns="http://www.w3.org/2000/svg">
+																							<path d="M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16
+																								16h416a16 16
+																								0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0
+																								0-16
+																								16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16
+																								0 0
+																								0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16
+																								16h416a16
+																								16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0
+																								0 0
+																								48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0
+																								0
+																								0-16-16z">
+																							</path>
+																						</svg>
+																					</div>
+																				</div>
+																				<nav class="hfe-nav-menu__layout-horizontal
+																					hfe-nav-menu__submenu-classic" data-toggle-icon="&lt;svg
+																					aria-hidden=&quot;true&quot;
+																					tabindex=&quot;0&quot; class=&quot;e-font-icon-svg
+																					e-fas-align-justify&quot; viewBox=&quot;0 0 448 512&quot;
+																					xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path
+																					d=&quot;M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16
+																					16h416a16
+																					16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0
+																					0-16
+																					16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0
+																					0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16
+																					16h416a16 16
+																					0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0
+																					48v32a16
+																					16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0
+																					0-16-16z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;"
+																					data-close-icon="&lt;svg aria-hidden=&quot;true&quot;
+																					tabindex=&quot;0&quot; class=&quot;e-font-icon-svg
+																					e-far-window-close&quot; viewBox=&quot;0 0 512 512&quot;
+																					xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path
+																					d=&quot;M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48
+																					48
+																					48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm0
+																					394c0
+																					3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V86c0-3.3 2.7-6
+																					6-6h404c3.3 0 6
+																					2.7 6 6v340zM356.5 194.6L295.1 256l61.4 61.4c4.6 4.6 4.6
+																					12.1 0
+																					16.8l-22.3 22.3c-4.6 4.6-12.1 4.6-16.8 0L256 295.1l-61.4
+																					61.4c-4.6
+																					4.6-12.1 4.6-16.8 0l-22.3-22.3c-4.6-4.6-4.6-12.1
+																					0-16.8l61.4-61.4-61.4-61.4c-4.6-4.6-4.6-12.1
+																					0-16.8l22.3-22.3c4.6-4.6 12.1-4.6 16.8 0l61.4 61.4
+																					61.4-61.4c4.6-4.6 12.1-4.6 16.8 0l22.3 22.3c4.7 4.6 4.7
+																					12.1 0
+																					16.8z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;"
+																					data-full-width="yes">
+																					<ul id="menu-1-7df41a56" class="hfe-nav-menu">
+																						<li id="menu-item-33" class="menu-item
+																							menu-item-type-custom
+																							menu-item-object-custom
+																							parent hfe-creative-menu">
+																							<a href="#home" class="hfe-menu-item" style="color:
+																								#000;">Home</a>
+																						</li>
+																						<li id="menu-item-32" class="menu-item
+																							menu-item-type-custom
+																							menu-item-object-custom
+																							parent hfe-creative-menu">
+																							<a href="#about" class="hfe-menu-item" style="color:
+																								#000;">About</a>
+																						</li>
+																						<li id="menu-item-35" class="menu-item
+																							menu-item-type-custom
+																							menu-item-object-custom
+																							parent hfe-creative-menu">
+																							<a href="#roadmap" class="hfe-menu-item" style="color:
+																								#000;">Roadmap</a>
+																						</li>
+																						<li id="menu-item-34" class="menu-item
+																							menu-item-type-custom
+																							menu-item-object-custom
+																							parent hfe-creative-menu">
+																							<a href="#tokenomics" class="hfe-menu-item" style="color:
+																								#000;">Tokenomics</a>
+																						</li>
+																					</ul>
+																				</nav>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="has_eae_slider elementor-column elementor-col-33
+																elementor-top-column elementor-element
+																elementor-element-57b4d52a"
+																data-id="57b4d52a"
+																data-element_type="column">
+																<div class="elementor-widget-wrap elementor-element-populated">
+																	<div class="elementor-element elementor-element-7fb40d44
+																		elementor-align-justify elementor-widget
+																		elementor-widget-button"
+																		data-id="7fb40d44"
+																		data-element_type="widget" data-widget_type="button.default">
+																		<div class="elementor-widget-container">
+																			<img src="./assets/images/image2.png" alt="">
 																		</div>
 																	</div>
 																</div>
 															</div>
 														</div>
-													</section> -->
-														<section id="buyModal" style="display: flex; justify-content: center;
-															align-items:center; margin-top: -50px;">
-															<div class="buyModal" style=" background-color: rgb(24,24,27);
-																border-radius:1rem 1rem 1rem 1rem;">
-																<div style="display: flex; flex-direction: column;
-																	align-items:center; justify-content: center; border: 3px solid
-																	white;
+													</section>
+												</div>
+											</header>
 
-																	border-radius: 1rem; margin: auto;">
-																	<div
-																		style="background-color: rgb(24,24,27); display: flex;
-																		flex-direction:column; align-items: center; border-radius:
-																		1rem 1rem 0 0; width:100%;">
-																		<div
-																			style="display: flex; flex-direction: column;
-																			align-items:center; justify-content: center; padding: 0.5rem
-																			2rem;">
-																			<span style="display: flex; color: white;
-																				font-family:Grandstander; margin-top: 20px;
-																				font-weight: 700; font-size: 22px;">BUY AND STAKE $ARBPANDA
-																				FOR 10% DISCOUNT </span>
-																			<span style="display: flex; color: white;
-																				font-family:Grandstander; margin-top: 20px;
-																				font-weight: 200; font-size: 16px; text-align: center;">
-																				Buy and stake $ARBPANDA to earn rewards, plus<br> qualify
-																				for the huge airdrop!
-																			</span>
-																			
+											<div style="margin-left: 50px; margin-right: 50px; margin-top: 20px;
+												width: 100%; display: flex;
+												justify-content: center; align-items: center;" class="toppage">
+												<div class="elementor-widget-container pandaImg" style="width:
+													50%;">
+													<img decoding="async"
 
-																		</div>
-																		<div>
-																			<div style="display: flex; width: 100%; justify-content:
-																			center; gap: 15px; align-items: center; margin-top: 20px;
-																			margin-bottom: 20px;">
-																			<span style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+														src="./assets/images/topImage.png"
+														class="attachment-large size-large wp-image-50"
+														alt=""
+														sizes="(max-width: 312px) 100vw, 312px"
+														style="width: 100%;">
+												</div>
+												<div style="width: 50%; display: flex; flex-direction: column; gap:
+													30px;" class="pandaImg">
+													<span style="width: 100%; display: flex; justify-content:
+														center; align-items: center; cursor: pointer;"
+														class="top_button1"
+														onclick="">
+														<img src="./assets/images/ButtonBuyNow.png" style="width:
+															24%" alt="">
+													</span>
 
-																				<span class="buyBtn" style="width: 55px; height: 50px;
-																				display: flex; color: white; justify-content: center;
-																				align-items: center; background-color: rgb(24,24,27);
-																				box-shadow: 0.5px 0.5px 5.5px 0.5px rgb(177, 177, 177); font-size: 30px;">
-																				00
-																				</span>
-																				<span style="color: white; font-size: 13px;">DAYS</span>
-																			</span>
-																			<span style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+													<span style="width: 100%; display: flex; justify-content:
+														center; align-items: center;cursor: pointer;"
+														class="top_button2"
+														onclick="" style="width: 100%; cursor: pointer;">
+														<img src="./assets/images/ButtinAirdrop.png"
+															style="width: 60%;" alt="">
+													</span>
+												</div>
 
-																				<span class="buyBtn" style="width: 55px; height: 50px;
-																				display: flex; color: white; justify-content: center;
-																				align-items: center; background-color: rgb(24,24,27);
-																				box-shadow: 0.5px 0.5px 5.5px 0.5px rgb(177, 177, 177); font-size: 30px;">
-																				00
-																				</span>
-																				<span style="color: white; font-size: 13px;">HOURS</span>
-																			</span>
-																			<span style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-
-																				<span class="buyBtn" style="width: 55px;height: 50px;
-																				display: flex; color: white; justify-content: center;
-																				align-items: center; background-color: rgb(24,24,27);
-																				box-shadow: 0.5px 0.5px 5.5px 0.5px rgb(177, 177, 177); font-size: 30px;">
-																				00
-																				</span>
-																				<span style="color: white; font-size: 13px;">MINUTES</span>
-																			</span>
-																			<span style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-
-																				<span class="buyBtn" style="width: 55px;height: 50px;
-																				display: flex; color: white; justify-content: center;
-																				align-items: center; background-color: rgb(24,24,27);
-																				box-shadow: 0.5px 0.5px 5.5px 0.5px rgb(177, 177, 177); font-size: 30px;">
-																				00
-																				</span>
-																				<span style="color: white; font-size: 13px;">SECONDS</span>
-																			</span>
-																		</div>
-																		</div>
-																		<div style="display: flex; width: 100%; justify-content:
-																			center; gap: 15px; align-items: center; margin-top: 20px;
-																			margin-bottom: 20px;">
-																			<button class="buyBtn" onclick="" style="width: 120px;
-																				display: flex; color: white; justify-content: center;
-																				align-items: center; background-color: rgb(24,24,27);
-																				box-shadow: 0.5px 0.5px 5.5px 0.5px rgb(177, 177, 177)">
-																				ETH
-																			</button>
-																			<button class="buyBtn" onclick="" style="width: 120px;
-																				display: flex; color: white; justify-content: center;
-																				align-items: center; background-color: rgb(24,24,27);
-																				box-shadow: 0.5px 0.5px 5.5px 0.5px rgb(177, 177, 177)">
-																				USDT
-																			</button>
-																			<button class="buyBtn" onclick="" style="width: 120px;
-																				display: flex; color: white; justify-content: center;
-																				align-items: center; background-color: rgb(24,24,27);
-																				box-shadow: 0.5px 0.5px 5.5px 0.5px rgb(177, 177, 177)">
-																				CARD
-																			</button>
-																		</div>
-																	</div>
-																	<div
-																		style=" display: flex; background-color: rgb(24,24,27);
-																		flex-direction:column; width: 100%; margin-top: 20px;">
-																		<div
-																			style="display: flex; align-items:center;
-																			justify-content:space-between; width: 100%; gap: 20px;">
-																			<div style="display: flex; flex-direction: column;
-																				align-items:center; justify-content: space-between; width:
-																				200px;
-
-																				margin-bottom: 1.5rem; margin-left: 2rem;">
-																				<span style="color: white;">Pay with ETH</span>
-																				<div style="display: flex; flex-direction: column;
-																					border-radius: 0.5rem; background-color: rgb(24,24,27);
-																					padding: 0.5rem 1rem; box-shadow: 0.5px 0.5px 5.5px 0.5px
-																					rgb(177, 177, 177)">
-																					<div style="display: flex; justify-content: space-between;
-																						align-items: center;">
-																						<input value="" style="border: none; outline: none;
-																							background-color: rgb(24,24,27);
-																							appearance: none; width: 80%; height: 30px;" type="text"
-																							inputmode="numeric">
-																						<span
-																							style="color: white; margin-left: 0.5rem; height:
-																							1.9rem;">ETH</span>
-																					</div>
-																				</div>
-																			</div>
-
-																			<div style="display: flex; flex-direction: column;
-																				align-items:center; justify-content: space-between;
-																				margin-bottom: 1.5rem;
-
-																				margin-right: 2rem; width: 200px;">
-																				<span style="color: white;">
-																					RECEIVE $ARBPANDA</span>
-																				<div style="display: flex; flex-direction: column;
-																					border-radius: 0.5rem; background-color: rgb(24,24,27);
-																					padding: 0.5rem 1rem; box-shadow: 0.5px 0.5px 5.5px 0.5px
-																					rgb(177, 177, 177);
-																					">
-																					<div style="display: flex; justify-content: space-between;
-																						align-items: center;">
-																						<input disabled style="border: none; background-color:
-																							rgb(24,24,27);
-																							outline: none; appearance: none; width: 80%; height:
-																							30px;" type="text" inputmode="numeric">
-																						<img loading="lazy" src="assets/images/logo.png"
-																							alt="Doge" style="height: 1.9rem;" />
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-
-
-
-																	</div>
-																	<div style="display: flex; width: 100%; justify-content:
-																		center; align-items: center; margin-top: 10px; margin-bottom:
-																		20px; flex-direction: column; ">
-																		<button class="buyBtn" style="width: 90%; display: flex;
-																			color: white; justify-content: center; align-items: center;
-																			background-color: rgb(24,24,27); box-shadow: 0.5px 0.5px
-																			5.5px 0.5px rgb(177, 177, 177)">
-																			BUY FOR 42% APY
-																		</button>
-																		<span style="display: flex; color: rgb(151, 151, 151);
-																			font-family:Grandstander; margin-top: 20px;
-																			font-weight: 700; font-size: 15px;">Powered by Web3Payment
-																		</span>
-																	</div>
-																</div>
-
-															</div>
-														</section>
-													</div>
+											</div>
+										</section>
+										<section style="width: 100%; height: 50px; background-color: bisque;
+											border:3px solid #000; display: flex; justify-content: center;
+											align-items: center;">
+											<div class="marquee" style="width: 100%;">
+												<div>
+													<span
+														style="font-weight: bold; color: #000; font-size: 30px;">
+														$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;
+													</span>
+													<span
+														style="font-weight: bold; color: #000; font-size: 30px;">
+														$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;$PEPE-SORA &nbsp;
+													</span>
 												</div>
 											</div>
+											
 										</section>
 										<section class="has_eae_slider elementor-section elementor-top-section
 											elementor-element elementor-element-158232ce elementor-section-boxed
 											elementor-section-height-default elementor-section-height-default"
 											data-id="158232ce"
 											data-element_type="section" id="about"
-											data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+											data-settings="{&quot;background_background&quot;:&quot;classic&quot;}"
+											style="background-color: #282828;">
 											<div class="elementor-container elementor-column-gap-default">
 												<div class="has_eae_slider elementor-column elementor-col-100
 													elementor-top-column elementor-element elementor-element-6764f558"
@@ -4609,27 +4121,6 @@
 															<div class="elementor-container elementor-column-gap-no">
 																<div class="has_eae_slider elementor-column elementor-col-50
 																	elementor-inner-column elementor-element
-																	elementor-element-55708247" data-id="55708247"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-54e52303
-																			elementor-widget elementor-widget-image" data-id="54e52303"
-																			data-element_type="widget"
-																			data-widget_type="image.default">
-																			<div class="elementor-widget-container">
-																				<img loading="lazy" decoding="async"
-																					width="512" height="512"
-																					src="./assets/images/Panda.png"
-																					class="attachment-full size-full wp-image-50"
-																					alt=""
-																					sizes="(max-width: 512px) 100vw, 512px">
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="has_eae_slider elementor-column elementor-col-50
-																	elementor-inner-column elementor-element
 																	elementor-element-34e38f0e" data-id="34e38f0e"
 																	data-element_type="column">
 																	<div
@@ -4640,7 +4131,7 @@
 																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
 																			data-widget_type="text-editor.default">
 																			<div class="elementor-widget-container">
-																				<p>About ArbPanda</p>
+																				<p>About Pepe Sora</p>
 																			</div>
 																		</div>
 																		<div class="elementor-element elementor-element-5b8337e6
@@ -4649,29 +4140,43 @@
 																			data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
 																			data-widget_type="text-editor.default">
 																			<div class="elementor-widget-container">
-																				<p>Many wonder, what is ArbPanda? ArbPanda
-																					is a dive into the whimsical world of
-																					cats, capturing the playful and curious
-																					spirit of these mysterious creatures in
-																					the crypto realm. Like a poetic tribute
-																					to our feline companions, this token
-																					dances on the blockchain stage, offering
-																					a symphony of fantasy and charm.</p>
+																				<p>Many wonder, what is PepeSora? PepeSora is a dive into
+																					the whimsical world of cats, capturing the playful and
+																					curious spirit of these mysterious creatures in the crypto
+																					realm. Like a poetic tribute to our feline companions, this
+																					token dances on the blockchain stage, offering a symphony
+																					of fantasy and charm.
+																					ArbPanda was created in response to this demand, and to
+																					provide value to the ecosystem the solana blockchain.</p>
 																			</div>
 																		</div>
-																		<div class="elementor-element elementor-element-41ecc021
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="41ecc021" data-element_type="widget"
-																			data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>ArbPanda was created in response to this
-																					demand, and to provide value to the
-																					ecosystem the solana blockchain.</p>
+
+																	</div>
+																</div>
+																<div class="has_eae_slider elementor-column elementor-col-50
+																	elementor-inner-column elementor-element
+																	elementor-element-55708247" data-id="55708247"
+																	data-element_type="column">
+																	<div
+																		class="elementor-widget-wrap elementor-element-populated">
+																		<div class="elementor-element elementor-element-54e52303
+																			elementor-widget elementor-widget-image" data-id="54e52303"
+																			data-element_type="widget"
+																			data-widget_type="image.default">
+																			<div class="elementor-widget-container" style=" display:
+																				flex;">
+																				<img loading="lazy" decoding="async"
+																					width="512" height="512"
+																					src="./assets/images/image3.png"
+																					class="attachment-full size-full wp-image-50"
+																					alt=""
+																					sizes="(max-width: 512px) 100vw, 512px"
+																					style="width: 90%; margin-top: 200px;">
 																			</div>
 																		</div>
 																	</div>
 																</div>
+
 															</div>
 														</section>
 														<section class="has_eae_slider elementor-section
@@ -4680,1485 +4185,487 @@
 															elementor-section-boxed elementor-section-height-default
 															elementor-section-height-default" data-id="48148dcc"
 															data-element_type="section"
-															data-settings="{&quot;animation&quot;:&quot;none&quot;}">
-															<div class="elementor-container elementor-column-gap-default">
+															data-settings="{&quot;animation&quot;:&quot;none&quot;}"
+															style="margin-top: -55px; ">
+															<div class="elementor-container elementor-column-gap-default"
+																style="background-color: white; border: 3px solid black;
+																border-radius: 20px; box-shadow: 10px 10px black;">
 																<div class="has_eae_slider elementor-column elementor-col-100
 																	elementor-inner-column elementor-element
 																	elementor-element-1b21dff0" data-id="1b21dff0"
 																	data-element_type="column">
 																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
+																		class="elementor-widget-wrap elementor-element-populated"
+																		style="padding: 10px;">
 																		<div class="elementor-element elementor-element-253b4685
 																			elementor-widget elementor-widget-text-editor"
 																			data-id="253b4685" data-element_type="widget"
 																			data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
 																			data-widget_type="text-editor.default">
 																			<div class="elementor-widget-container">
-																				<p>ArbPanda will be more than just a
-																					memecoin, featuring several unique use
-																					cases and utilities that are beneficial
-																					to the long term growth of the Solana
-																					Ecosystem.</p>
-																			</div>
-																		</div>
-																		<div class="elementor-element elementor-element-53593395
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="53593395" data-element_type="widget"
-																			data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>With the Solana blockchain and coin
-																					making a huge return over the last few
-																					months, it’s time for ArbPanda to come
-																					in and set the stardard for memecoins on
-																					Solana. There’s a new panda in town.</p>
+																				<p class="" style="color: #000; font-size: 25px;">PepeSora
+																					will be more than just a memecoin, featuring several unique
+																					use cases and utilities that are beneficial to the long
+																					term growth of the Solana Ecosystem.
+																					With the Solana blockchain and coin making a huge return
+																					over the last few months, it’s time for PepeSora to come in
+																					and set the stardard for memecoins on Solana. There’s a new
+																					panda in town.</p>
 																			</div>
 																		</div>
 																	</div>
 																</div>
 															</div>
 														</section>
-														<section class="ticketSection" style="display: flex; width: 100%; gap: 100px;
-															justify-content: space-between; align-items:
-															center;padding-right: 310px; padding-left: 310px; margin-top:
-															50px;">
-															<div style="display: flex; gap: 20px; width: 40%; flex-direction:
-																column; justify-content: flex-start; align-items: center;" class="res2">
-																<span style="font-size: 35px; text-align: start; color: white;
-																	font-family: Grandstander; line-height: 40px; font-weight:
-																	bold;">
-																	How to acquire your $ARBPANDA presale ticket
-																</span>
-																<span style="font-size: 17px; text-align: start; color: white;
+														<section class="ticketSection" style="display: flex;
+															padding-right: 310px; padding-left: 310px; margin-top: 100px;
+															justify-content: center; align-items: center; width: 100%;">
+															<div style=" width: 10%;" class="res3">
+																<img style="width: 100%;" src="./assets/images/Layer_1.png"
+																	alt="">
+															</div>
+															<div style="width: 80%; display: flex; justify-content: center;
+																align-items: center; gap: 50px; flex-direction: column;">
+																<div class="res4" style="display: flex; justify-content: center;
+																	align-content: center; color: white;font-size: 50px;
+																	font-weight: bold; font-family: Grandstander;">
+																	Explore PepeSora's Potential
+																</div>
+																<div class="" style="display: flex; justify-content: center;
+																	align-content: center; color: white;font-size: 20px;
 																	font-family: Grandstander;">
-																	Ready for some ARBPANDA fun? Obtaining your pawsome ARBPANDA
-																	presale tokens is a breeze! Follow these simple steps to become
-																	a part of the ARBPANDA pack:
-																</span>
-															</div>
-															<div style="display: flex; justify-content: center; align-items:
-																center; gap: 20px; flex-direction: column; width: 60%;" class="res2">
-																<span style="display: flex; justify-content: center;
-																	align-items: center; padding: 20px; gap: 20px; border: 2px
-																	solid white; border-radius: 15px;">
-																	<span>
-																		<img style="width: 100px;" src="./assets/images/how1.svg"
-																			alt="">
-																	</span>
-																	<span style="display: flex; flex-direction: column;
-																		justify-content: flex-start; gap: 10px; align-items:
-																		flex-start;">
-																		<span style="font-family: Grandstander; font-size: 25px;
-																			color: white;">Select Wallet</span>
-																		<span style="font-family: Grandstander; font-size: 18px;
-																			color: white;">Link your Phantom/Solfare wallet to kickstart
-																			your ARBPANDA adventure with ease.</span>
-																	</span>
-																</span>
-																<span style="display: flex; justify-content: center;
-																	align-items: center; padding: 20px; gap: 20px; border: 2px
-																	solid white; border-radius: 15px;">
-																	<span>
-																		<img style="width: 100px;" src="./assets/images/how2.svg"
-																			alt="">
-																	</span>
-																	<span style="display: flex; flex-direction: column;
-																		justify-content: flex-start; gap: 10px; align-items:
-																		flex-start;">
-																		<span style="font-family: Grandstander; font-size: 25px;
-																			color: white;">Select Your Amount</span>
-																		<span style="font-family: Grandstander; font-size: 18px;
-																			color: white;">Decide on the quantity of ARBPANDA you desire
-																			(Minimum 0.5 SOL | Maximum 20 SOL).</span>
-																	</span>
-																</span><span style="display: flex; justify-content: center;
-																	align-items: center; padding: 20px; gap: 20px; border: 2px
-																	solid white; border-radius: 15px;">
-																	<span>
-																		<img style="width: 140px;" src="./assets/images/how3.svg"
-																			alt="">
-																	</span>
-																	<span style="display: flex; flex-direction: column;
-																		justify-content: flex-start; gap: 10px; align-items:
-																		flex-start;">
-																		<span style="font-family: Grandstander; font-size: 25px;
-																			color: white;">Click Purchase</span>
-																		<span style="font-family: Grandstander; font-size: 18px;
-																			color: white;">After selecting your ARBPANDA amount, hit the
-																			purchase button, and confirm the transaction on your Phantom
-																			wallet.</span>
-																	</span>
-																</span>
-
+																	PepeSora is not just a Token, it will bring you much more than
+																	that!
+																</div>
 															</div>
 														</section>
-														<section class="ticketSection" style="display: flex; width: 100%; gap: 100px;
+														<section class="ticketSection" style="display: flex; width: 100%;
+															gap: 100px;
 															justify-content: space-between; align-items:
 															center;padding-right: 310px; padding-left: 310px; margin-top:
-															150px;">
-															<div style="display: flex; width: 40%; justify-content:
-																flex-start; align-items: center;">
-																<img style="width: 80%;" src="./assets//images//qr.jpg" alt="">
-															</div>
-															<div style="display: flex; justify-content: flex-start;
-																align-items: center; gap: 20px; flex-direction: column; width:
-																60%;" class="res2">
-																<span style="font-family: Grandstander; font-size: 40px; color:
-																	white; font-weight: bold; line-height: 70px;" class="res3">An Alternate
-																	Route to Join the Presale
-																	Direct SOL Transfer</span>
-																<span style="font-family: Grandstander; font-size: 25px; color:
-																	white; line-height: 40px;">Facing issues with the DApp or seeking a simpler
-																	method? Engage in the $ARBPANDA presale by directly sending
-																	your chosen SOL amount to <span style="color: red;">AREBPANDACoin.sol</span>
-																	(Minimum 0.5 SOL, Maximum 20 SOL).</span>
+															50px; margin-bottom: 100px;">
 
-																<div style="width:100%; display: flex; justify-content: flex-start; align-content: flex-start;">
-																	<button style="width: 200px; background-color: black; height: 50px; border: 2px solid white; display: flex; justify-content: center; align-items: center; border-radius: 30px; font-family: Grandstander; font-size: 30px; color:
-																	white;">
-																		Buy Now
-																	</button>
+															<div style="display: flex; gap: 40px; width: 50%; flex-direction:
+																column; justify-content: flex-start; align-items: center;"
+																class="res2">
+																<div style="display: flex; gap: 20px; width: 100%;
+																	flex-direction:
+																	column; padding: 15px; justify-content: flex-start;
+																	align-items: center; background-color: white; border: 3px solid
+																	black; border-radius: 20px;box-shadow: 10px 10px black;">
+																	<span style="font-size: 25px; text-align: start; color: white;
+																		font-family: Grandstander; line-height: 40px; font-weight:
+																		bold; color: #6AB164; width: 100%;">
+																		Safe And Long-Term Commitment
+																	</span>
+																	<span style="font-size: 17px; text-align: start; color: white;
+																		font-family: Grandstander; color: black; width: 100%;">
+																		We are commicommitted to the safety and Long-Term of PepeSora
+																		to the community. We will perform audits and have members
+																		responsible for testing tasks to improve security and help
+																		investors always feel secure about their investmens
+																	</span>
 																</div>
-																<span style="font-family: Grandstander; font-size: 20px; color:
-																	white; font-style: italic;">Don't miss out on the ARBPANDA
-																	excitement – be a part of the presale now and let the dog memes
-																	roll!</span>
+																<div style="display: flex; padding: 15px; gap: 20px; width:
+																	100%; flex-direction:
+																	column; justify-content: flex-start; align-items: center;
+																	background-color: white; border: 3px solid black;
+																	border-radius: 20px;box-shadow: 10px 10px black;">
+																	<span style="font-size: 25px; text-align: start; color: white;
+																		font-family: Grandstander; line-height: 40px; font-weight:
+																		bold; color: #6AB164; width: 100%;">
+																		Team Vision
+																	</span>
+																	<span style="font-size: 17px; text-align: start; color: white;
+																		font-family: Grandstander; color: black; width: 100%;">
+																		It is not dificult to recognize that the two technologies that
+																		will bring about a reel boom in the coming years will be
+																		Blockchain and AI. We grasp that and become part of that wave
+																		and will be one of the pioineering projects in creating a
+																		bridge between Blockchaind and AI
+																	</span>
+																</div>
+															</div>
 
-
+															<div style="display: flex; gap: 40px; width: 50%; flex-direction:
+																column; justify-content: flex-start; align-items: center;
+																margin-top: 200px;"
+																class="res2">
+																<div style="display: flex; gap: 20px; width: 100%;
+																	flex-direction:
+																	column; padding: 15px; justify-content: flex-start;
+																	align-items: center; background-color: white; border: 3px solid
+																	black; border-radius: 20px;box-shadow: 10px 10px black;">
+																	<span style="font-size: 25px; text-align: start; color: white;
+																		font-family: Grandstander; line-height: 40px; font-weight:
+																		bold; color: #6AB164; width: 100%;">
+																		The Combination Between Blockchain & AI
+																	</span>
+																	<span style="font-size: 17px; text-align: start; color: white;
+																		font-family: Grandstander; color: black; width: 100%;">
+																		Pepesora is the intersection of Blockchain and AI Technology,
+																		we set oursourselves with a mission to develop an ecosystem
+																		that provides and optimized products and integrates the best
+																		advantages of Blockchain and AI
+																	</span>
+																</div>
+																<div style="display: flex; padding: 15px; gap: 20px; width:
+																	100%; flex-direction:
+																	column; justify-content: flex-start; align-items: center;
+																	background-color: white; border: 3px solid black;
+																	border-radius: 20px;box-shadow: 10px 10px black;">
+																	<span style="font-size: 25px; text-align: start; color: white;
+																		font-family: Grandstander; line-height: 40px; font-weight:
+																		bold; color: #6AB164; width: 100%;">
+																		Big and Public Roadmap
+																	</span>
+																	<span style="font-size: 17px; text-align: start; color: white;
+																		font-family: Grandstander; color: black; width: 100%;
+																		margin-top: 20px; margin-bottom: 30px;">
+																		The PepeSora’s team has made a big plan and made sure to stay
+																		abreast, we will public every step to the community! let’s
+																		step by step bring PepeSora to the coin-top rangkings
+																	</span>
+																</div>
 															</div>
 														</section>
+
 													</div>
 												</div>
 											</div>
 										</section>
 
-										<section class="has_eae_slider elementor-section elementor-top-section
-											elementor-element elementor-element-40a76496 elementor-hidden-tablet
-											elementor-hidden-mobile elementor-section-boxed
-											elementor-section-height-default elementor-section-height-default"
-											data-id="40a76496"
-											data-element_type="section" id="about">
-											<div class="elementor-container elementor-column-gap-default">
+										<section class="intro" style="width: 100%; display: flex;
+											flex-direction: column; justify-content: center; align-items:
+											center;">
+											<div class="res4" style="display: flex; margin-top: 150px;
+												justify-content: center; align-items: center; text-align: center;
+												font-weight: bold; font-size: 40px; color: black; font-family:
+												Grandstander;">
+												PEPESORA BOX Introduction
+											</div>
+											<div style="display: flex; justify-content: center; margin-top: 50px;
+												z-index: 10; align-items: center;">
+												<img style="width:200px" src="./assets/images/Group3.png" alt="">
+											</div>
+											<div class="res5" style="display: flex; width: 50%; justify-content:
+												center; margin-top: -100px; align-items: center; background-color:
+												white; border: 3px solid black; color: #000; font-size: 20px;
+												padding: 20px; padding-top: 100px; border-radius: 20px;
+												font-family:Grandstander;">
+												PEPESORA INO NFTs BOX will be an opportunity for investors who
+												really loves PepeSora. When you own PepeSora NFT, you will be on
+												whitelist of the project’s upcoming presale. In addition, NFT owners
+												will also receive additional privileges throughout the project’s
+												development process
+											</div>
+											<div class="res5" style="display: flex; justify-content: center;
+												width: 40%; align-items: center; margin-top: 50px; margin-bottom:
+												50px;">
+												<img src="./assets/images/Group7.png" style="cursor: pointer;"
+													alt="">
 											</div>
 										</section>
-										<section class="has_eae_slider elementor-section elementor-top-section
-											elementor-element elementor-element-5014f94f elementor-section-boxed
-											elementor-section-height-default elementor-section-height-default"
-											data-id="5014f94f"
-											data-element_type="section" id="tokenomics"
-											data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-											<div class="elementor-container elementor-column-gap-default">
-												<div class="has_eae_slider elementor-column elementor-col-100
-													elementor-top-column elementor-element elementor-element-5fcc970c"
-													data-id="5fcc970c"
-													data-element_type="column">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<section class="has_eae_slider elementor-section
-															elementor-inner-section
-															elementor-element elementor-element-287cb8e3
-															elementor-section-full_width elementor-section-height-default
-															elementor-section-height-default" data-id="287cb8e3"
-															data-element_type="section"
-															data-settings="{&quot;animation&quot;:&quot;none&quot;}">
-															<div class="elementor-container elementor-column-gap-default">
-																<div class="has_eae_slider elementor-column elementor-col-100
-																	elementor-inner-column elementor-element
-																	elementor-element-7a862bc2" data-id="7a862bc2"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-13b8db99
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="13b8db99" data-element_type="widget"
-																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>Tokenomics</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</section>
-													</div>
+
+										<section class="tokenomics" id="tokenomics" style="display: flex;
+											width: 100%; justify-content: center;align-items: center;">
+											<div class="res6" style="width: 50%; display: flex; z-index: 10;
+												margin-top: 150px; margin-left: 200px; flex-direction: column; gap:
+												30px; justify-content: center; align-items: flex-start;">
+												<div style="display: flex; width: 90%; justify-content: center;
+													align-items: flex-start; font-size: 40px; color: #000; font-family:
+													Grandstander;">
+													<span style="display: flex; font-weight: bold; width: 100%;
+														justify-content: flex-start; align-items: flex-start;">
+														Tokenomics
+													</span>
 												</div>
+												<div style="display: flex; width: 90%; justify-content:
+													space-between; align-items: flex-start;">
+													<div class="res8" style="display: flex; width: 55%;
+														justify-content: center;align-items: center;background-color:
+														white;color: #000; font-family: Grandstander; padding:
+														10px;border: 2px solid black; border-radius: 20px; box-shadow:
+														10px 10px black; font-size: 20px;">Supply 100,000,000,000,000</div>
+													<div class="res8" style="display: flex; width: 40%;
+														justify-content: center;align-items: center;background-color:
+														white;color: #000; font-family: Grandstander; padding:
+														10px;border: 2px solid black; border-radius: 20px; box-shadow:
+														10px 10px black; font-size: 20px;">Symbol $PEPESORA</div>
+												</div>
+												<div style="display: flex; width: 90%; justify-content:
+													space-between; align-items: flex-start;">
+													<div class="res8" style="display: flex; width: 30%;
+														justify-content: center;align-items: center;background-color:
+														white;color: #000; font-family: Grandstander; padding:
+														10px;border: 2px solid black; border-radius: 20px; box-shadow:
+														10px 10px black; font-size: 20px;">Presale 60%</div>
+													<div class="res8" style="display: flex; width: 30%;
+														justify-content: center;align-items: center;background-color:
+														white;color: #000; font-family: Grandstander; padding:
+														10px;border: 2px solid black; border-radius: 20px; box-shadow:
+														10px 10px black; font-size: 20px;">LP 15%</div>
+													<div class="res8" style="display: flex; width: 30%;
+														justify-content: center;align-items: center;background-color:
+														white;color: #000; font-family: Grandstander; padding:
+														10px;border: 2px solid black; border-radius: 20px; box-shadow:
+														10px 10px black; font-size: 20px;">CEX Listings 10%</div>
+												</div>
+												<div style="display: flex; width: 90%; justify-content:
+													space-between; align-items: flex-start;">
+													<div class="res8" style="display: flex; width: 55%;
+														justify-content: center;align-items: center;background-color:
+														white;color: #000; font-family: Grandstander; padding:
+														10px;border: 2px solid black; border-radius: 20px; box-shadow:
+														10px 10px black; font-size: 20px;">Marketing & Development 10%</div>
+													<div class="res8" style="display: flex; width: 40%;
+														justify-content: center;align-items: center;background-color:
+														white;color: #000; font-family: Grandstander; padding:
+														10px;border: 2px solid black; border-radius: 20px; box-shadow:
+														10px 10px black; font-size: 20px;">Team 5%</div>
+												</div>
+												<hr style=" width: 90%; background-color: #000;" size="3px">
+												<div style="display: flex; width: 90%; justify-content:
+													space-between; align-items: flex-start;">
+													<div class="res8" style="display: flex; width: 100%;
+														justify-content: center;align-items: center;background-color:
+														white;color: #000; font-family: Grandstander; padding:
+														10px;border: 2px solid black; border-radius: 20px; box-shadow:
+														10px 10px black; font-size: 20px;">0x00</div>
+												</div>
+											</div>
+											<div class="res7" style="width:50%; display: flex; justify-content:
+												flex-start; margin-top: 200px; margin-left: -150px;">
+												<img style="width: 60%;" src="./assets/images/Layer2.png" alt="">
 											</div>
 										</section>
-										<section class="has_eae_slider elementor-section elementor-top-section
-											elementor-element elementor-element-1d54eed6 elementor-section-boxed
-											elementor-section-height-default elementor-section-height-default"
-											data-id="1d54eed6"
-											data-element_type="section"
-											data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-											<div class="elementor-container elementor-column-gap-default">
-												<div class="has_eae_slider elementor-column elementor-col-100
-													elementor-top-column elementor-element elementor-element-267daa42"
-													data-id="267daa42"
-													data-element_type="column">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<section class="has_eae_slider elementor-section
-															elementor-inner-section
-															elementor-element elementor-element-3ea39686
-															elementor-section-boxed elementor-section-height-default
-															elementor-section-height-default" data-id="3ea39686"
-															data-element_type="section"
-															data-settings="{&quot;animation&quot;:&quot;none&quot;}">
-															<div class="elementor-container elementor-column-gap-default">
-																<div class="has_eae_slider elementor-column elementor-col-50
-																	elementor-inner-column elementor-element
-																	elementor-element-4ec12ba4" data-id="4ec12ba4"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-256c44bf
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="256c44bf" data-element_type="widget"
-																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>Token Address</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="has_eae_slider elementor-column elementor-col-50
-																	elementor-inner-column elementor-element
-																	elementor-element-b864c20" data-id="b864c20"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-5dd583a7
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="5dd583a7" data-element_type="widget"
-																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>0x00
-																				</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</section>
+
+										<section id="roadmap" style="background-color: #282828;">
+											<section class="ticketSection" style="display: flex; padding-right:
+												310px; padding-left: 310px; margin-top: 100px; justify-content:
+												center; align-items: center; width: 100%;">
+												<div style="width: 80%; display: flex; justify-content: center;
+													align-items: center; gap: 50px; flex-direction: column;">
+													<div class="res4" style="display: flex; justify-content: center;
+														align-content: center; color: white;font-size: 50px; font-weight:
+														bold; font-family: Grandstander;">
+														Roadmap
 													</div>
+
 												</div>
+											</section>
+											<div class="ticketSection" style=" width: 100%; margin-top: 50px;
+												padding-right: 250px; padding-left: 250px;">
+												<hr style="color: #ffffff; size: 4px; align-items: center;">
 											</div>
-										</section>
-										<section class="has_eae_slider elementor-section elementor-top-section
-											elementor-element elementor-element-64d2db8 elementor-section-boxed
-											elementor-section-height-default elementor-section-height-default"
-											data-id="64d2db8"
-											data-element_type="section"
-											data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-											<div class="elementor-container elementor-column-gap-default">
-												<div class="has_eae_slider elementor-column elementor-col-50
-													elementor-top-column elementor-element elementor-element-61ab86b5"
-													data-id="61ab86b5"
-													data-element_type="column">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<section class="has_eae_slider elementor-section
-															elementor-inner-section
-															elementor-element elementor-element-5da2e898
-															elementor-section-boxed elementor-section-height-default
-															elementor-section-height-default" data-id="5da2e898"
-															data-element_type="section"
-															data-settings="{&quot;animation&quot;:&quot;none&quot;}">
-															<div class="elementor-container elementor-column-gap-default">
-																<div class="has_eae_slider elementor-column elementor-col-50
-																	elementor-inner-column elementor-element
-																	elementor-element-344f9de9" data-id="344f9de9"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-5969dd7a
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="5969dd7a" data-element_type="widget"
-																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>Supply</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="has_eae_slider elementor-column elementor-col-50
-																	elementor-inner-column elementor-element
-																	elementor-element-639d9c8d" data-id="639d9c8d"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-4be98168
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="4be98168" data-element_type="widget"
-																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>100,000,000,000,000</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</section>
+											<section class="ticketSection res9" style="display: flex; width:
+												100%;
+												gap: 50px;
+												justify-content: space-between; align-items:
+												center;padding-right: 250px; padding-left: 250px; margin-top:
+												-34px; margin-bottom: 100px;">
+
+												<div style="display: flex; gap: 40px; width: 33%; flex-direction:
+													column; justify-content: center; align-items: center;"
+													class="res9">
+													<img style="width: 80px;" src="./assets/images/image2.png" alt="">
+												</div>
+												<div style="display: flex; gap: 40px; width: 33%; flex-direction:
+													column; justify-content: center; align-items: center; "
+													class="res9">
+													<span style="background-color: white; width: 10px; height: 10px;
+														border-radius: 50%;"></span>
+												</div>
+												<div style="display: flex; gap: 40px; width: 33%; flex-direction:
+													column; justify-content: center; align-items: center; "
+													class="res9">
+													<span style="background-color: white; width: 10px; height: 10px;
+														border-radius: 50%;"></span>
+
+												</div>
+											</section>
+											<section class="ticketSection" style="display: flex; width: 100%;
+												gap: 50px;
+												justify-content: space-between; align-items:
+												center;padding-right: 250px; padding-left: 250px; margin-top:
+												50px; margin-bottom: 100px;">
+
+												<div style="display: flex; gap: 40px; width: 33%; flex-direction:
+													column; justify-content: flex-start; align-items: center;"
+													class="res2">
+													<div style="display: flex; gap: 20px; width: 100%;
+														flex-direction:
+														column; padding: 15px; justify-content: flex-start;
+														align-items: center; background-color: white; border: 3px solid
+														black; border-radius: 20px;box-shadow: 10px 10px black;">
+														<span style="font-size: 25px; text-align: center; color: white;
+															font-family: Grandstander; line-height: 40px; font-weight:
+															bold; color: #6AB164; width: 100%;">
+															Phase 1
+														</span>
+														<span style="font-size: 17px; text-align: start; color: white;
+															font-family: Grandstander; color: black; width: 100%;">
+															<ul>
+																<li style="font-size: 15px; color: #000;">Deploy contract</li>
+																<li style="font-size: 15px; color: #000;">Build community</li>
+																<li style="font-size: 15px; color: #000;">Presale</li>
+																<li style="font-size: 15px; color: #000;">Distri presale
+																	participants</li>
+															</ul>
+														</span>
 													</div>
 												</div>
-												<div class="has_eae_slider elementor-column elementor-col-50
-													elementor-top-column elementor-element elementor-element-4482bf3f"
-													data-id="4482bf3f"
-													data-element_type="column">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<section class="has_eae_slider elementor-section
-															elementor-inner-section
-															elementor-element elementor-element-60ee7c58
-															elementor-section-boxed elementor-section-height-default
-															elementor-section-height-default" data-id="60ee7c58"
-															data-element_type="section"
-															data-settings="{&quot;animation&quot;:&quot;none&quot;}">
-															<div class="elementor-container elementor-column-gap-default">
-																<div class="has_eae_slider elementor-column elementor-col-50
-																	elementor-inner-column elementor-element
-																	elementor-element-f081969" data-id="f081969"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-1abb59a0
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="1abb59a0" data-element_type="widget"
-																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>Symbol</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="has_eae_slider elementor-column elementor-col-50
-																	elementor-inner-column elementor-element
-																	elementor-element-225b074" data-id="225b074"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-30795fb4
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="30795fb4" data-element_type="widget"
-																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>$ArbPanda</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</section>
+												<div style="display: flex; gap: 40px; width: 33%; flex-direction:
+													column; justify-content: flex-start; align-items: center; "
+													class="res2">
+													<div style="display: flex; gap: 20px; width: 100%;
+														flex-direction:
+														column; padding: 15px; justify-content: flex-start;
+														align-items: center; background-color: white; border: 3px solid
+														black; border-radius: 20px;box-shadow: 10px 10px black;">
+														<span style="font-size: 25px; text-align: center; color: white;
+															font-family: Grandstander; line-height: 40px; font-weight:
+															bold; color: #6AB164; width: 100%;">
+															Phase 2
+														</span>
+														<span style="font-size: 17px; text-align: start; color: white;
+															font-family: Grandstander; color: black; width: 100%;">
+															<ul>
+																<li style="font-size: 15px; color: #000;">Roadmap</li>
+																<li style="font-size: 15px; color: #000;">Launch on raydium</li>
+																<li style="font-size: 15px; color: #000;">Influencer and artist</li>
+																<li style="font-size: 15px; color: #000;">1000 holders</li>
+															</ul>
+														</span>
 													</div>
 												</div>
-											</div>
-										</section>
-										<section class="has_eae_slider elementor-section elementor-top-section
-											elementor-element elementor-element-4ceb166b elementor-section-boxed
-											elementor-section-height-default elementor-section-height-default"
-											data-id="4ceb166b"
-											data-element_type="section"
-											data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-											<div class="elementor-container elementor-column-gap-default">
-												<div class="has_eae_slider elementor-column elementor-col-33
-													elementor-top-column elementor-element elementor-element-5d230fe2"
-													data-id="5d230fe2"
-													data-element_type="column">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<section class="has_eae_slider elementor-section
-															elementor-inner-section
-															elementor-element elementor-element-3d9da908
-															elementor-section-boxed elementor-section-height-default
-															elementor-section-height-default" data-id="3d9da908"
-															data-element_type="section"
-															data-settings="{&quot;animation&quot;:&quot;none&quot;}">
-															<div class="elementor-container elementor-column-gap-default">
-																<div class="has_eae_slider elementor-column elementor-col-50
-																	elementor-inner-column elementor-element
-																	elementor-element-3577c419" data-id="3577c419"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-6d5312bf
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="6d5312bf" data-element_type="widget"
-																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>60%</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="has_eae_slider elementor-column elementor-col-50
-																	elementor-inner-column elementor-element
-																	elementor-element-d1495bf" data-id="d1495bf"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-7a82061c
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="7a82061c" data-element_type="widget"
-																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>Presale</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</section>
+												<div style="display: flex; gap: 40px; width: 33%; flex-direction:
+													column; justify-content: flex-start; align-items: center; "
+													class="res2">
+													<div style="display: flex; gap: 0px; width: 100%;
+														flex-direction:
+														column; padding: 15px; justify-content: flex-start;
+														align-items: center; background-color: white; border: 3px solid
+														black; border-radius: 20px;box-shadow: 10px 10px black;">
+														<span style="font-size: 25px; text-align: center; color: white;
+															font-family: Grandstander; line-height: 40px; font-weight:
+															bold; color: #6AB164; width: 100%;">
+															Phase 3
+														</span>
+														<span style="font-size: 17px; text-align: start; color: white;
+															font-family: Grandstander; color: black; width: 100%;">
+															<ul>
+																<li style="font-size: 15px; color: #000;">Listing on CG</li>
+																<li style="font-size: 15px; color: #000;">Listing on CMC</li>
+																<li style="font-size: 15px; color: #000;">Social media expansion</li>
+																<li style="font-size: 15px; color: #000;">5000 holders</li>
+																<li style="font-size: 15px; color: #000;">CEX listing</li>
+															</ul>
+														</div>
 													</div>
-												</div>
-												<div class="has_eae_slider elementor-column elementor-col-33
-													elementor-top-column elementor-element elementor-element-2226bada"
-													data-id="2226bada"
-													data-element_type="column">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<section class="has_eae_slider elementor-section
-															elementor-inner-section
-															elementor-element elementor-element-2b0be078
-															elementor-section-boxed elementor-section-height-default
-															elementor-section-height-default" data-id="2b0be078"
-															data-element_type="section"
-															data-settings="{&quot;animation&quot;:&quot;none&quot;}">
-															<div class="elementor-container elementor-column-gap-default">
-																<div class="has_eae_slider elementor-column elementor-col-50
-																	elementor-inner-column elementor-element
-																	elementor-element-2d9f83c2" data-id="2d9f83c2"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-59daa1e7
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="59daa1e7" data-element_type="widget"
-																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>15%</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="has_eae_slider elementor-column elementor-col-50
-																	elementor-inner-column elementor-element
-																	elementor-element-23f3cdb7" data-id="23f3cdb7"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-6108d468
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="6108d468" data-element_type="widget"
-																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>LP</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</section>
+												</section>
+												<section class="ticketSection" style="width: 100%; padding-left:
+													250px; padding-right: 250px; display: flex; justify-content:
+													space-between; align-items: center; ">
+													<div style="display: flex; width: 50%; justify-content: flex-start;
+														align-items: flex-start;">
+														<img style="width: 80%;" src="./assets/images/image5.png" alt="">
 													</div>
-												</div>
-												<div class="has_eae_slider elementor-column elementor-col-33
-													elementor-top-column elementor-element elementor-element-7a03c904"
-													data-id="7a03c904"
-													data-element_type="column">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<section class="has_eae_slider elementor-section
-															elementor-inner-section
-															elementor-element elementor-element-34d93f4c
-															elementor-section-boxed elementor-section-height-default
-															elementor-section-height-default" data-id="34d93f4c"
-															data-element_type="section"
-															data-settings="{&quot;animation&quot;:&quot;none&quot;}">
-															<div class="elementor-container elementor-column-gap-default">
-																<div class="has_eae_slider elementor-column elementor-col-50
-																	elementor-inner-column elementor-element
-																	elementor-element-1ea0b0df" data-id="1ea0b0df"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-75a6d351
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="75a6d351" data-element_type="widget"
-																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>10%</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="has_eae_slider elementor-column elementor-col-50
-																	elementor-inner-column elementor-element
-																	elementor-element-6a3c71e1" data-id="6a3c71e1"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-d1ada3a
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="d1ada3a" data-element_type="widget"
-																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>CEX Listings</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</section>
+													<div style="display: flex; flex-direction: column; width: 50%;
+														justify-content: center; align-items: center; gap: 50px;">
+														<span class="res4" style="font-size: 70px; text-align: center;
+															color: white;
+															font-family: Grandstander; color: white; width: 100%;
+															font-weight: bold;">Follow <br><br><br>PepeSora on<br><br><br>
+															social media</span>
+														<div style="display: flex; justify-content: center; align-items:
+															center; gap: 30px;">
+															<img style="width: 60px; cursor: pointer;"
+																src="./assets/images/telegram1.png" alt="">
+															<img style="width: 60px; cursor: pointer;"
+																src="./assets/images/twitter1.png" alt="">
+														</div>
 													</div>
-												</div>
-											</div>
-										</section>
-										<section class="has_eae_slider elementor-section elementor-top-section
-											elementor-element elementor-element-2290e466 elementor-section-boxed
-											elementor-section-height-default elementor-section-height-default"
-											data-id="2290e466"
-											data-element_type="section"
-											data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-											<div class="elementor-container elementor-column-gap-default">
-												<div class="has_eae_slider elementor-column elementor-col-50
-													elementor-top-column elementor-element elementor-element-78e589cf"
-													data-id="78e589cf"
-													data-element_type="column">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<section class="has_eae_slider elementor-section
-															elementor-inner-section
-															elementor-element elementor-element-1fe143c9
-															elementor-section-boxed elementor-section-height-default
-															elementor-section-height-default" data-id="1fe143c9"
-															data-element_type="section"
-															data-settings="{&quot;animation&quot;:&quot;none&quot;}">
-															<div class="elementor-container elementor-column-gap-default">
-																<div class="has_eae_slider elementor-column elementor-col-50
-																	elementor-inner-column elementor-element
-																	elementor-element-74f6b0c" data-id="74f6b0c"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-50a31222
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="50a31222" data-element_type="widget"
-																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>10%</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="has_eae_slider elementor-column elementor-col-50
-																	elementor-inner-column elementor-element
-																	elementor-element-7f76164f" data-id="7f76164f"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-33763de7
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="33763de7" data-element_type="widget"
-																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>Marketing &amp; Developement</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</section>
+												</section>
+												<section style=" width: 100%; margin-top: 100px; padding-bottom:
+													100px;">
+													<hr style="color: #ffffff; size: 10px; align-items: center; height:
+														3px;">
+												</section>
+												<section style="width: 100%; display: flex;justify-content: center;
+													flex-direction: column; align-items: center; padding-bottom:
+													50px;">
+													<div style="display: flex; justify-content: center; align-items:
+														center; gap: 20px;">
+														<img style="width: 100px;" src="./assets/images/image2.png"
+															alt="">
+														<span class="res4" style="font-size: 70px; text-align: center;
+															color: white;
+															font-family: Grandstander; color: white; width: 100%;
+															font-weight: bold;">PepeSora</span>
 													</div>
-												</div>
-												<div class="has_eae_slider elementor-column elementor-col-50
-													elementor-top-column elementor-element elementor-element-4502dc9e"
-													data-id="4502dc9e"
-													data-element_type="column">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<section class="has_eae_slider elementor-section
-															elementor-inner-section
-															elementor-element elementor-element-350d0e87
-															elementor-section-boxed elementor-section-height-default
-															elementor-section-height-default" data-id="350d0e87"
-															data-element_type="section"
-															data-settings="{&quot;animation&quot;:&quot;none&quot;}">
-															<div class="elementor-container elementor-column-gap-default">
-																<div class="has_eae_slider elementor-column elementor-col-50
-																	elementor-inner-column elementor-element
-																	elementor-element-31c015de" data-id="31c015de"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-38e58fba
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="38e58fba" data-element_type="widget"
-																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>5%</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="has_eae_slider elementor-column elementor-col-50
-																	elementor-inner-column elementor-element
-																	elementor-element-74e0a5b3" data-id="74e0a5b3"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-7cdf2048
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="7cdf2048" data-element_type="widget"
-																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>Team</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</section>
+													<div style="display: flex; width: 80%; justify-content: center;
+														align-items: center; margin-top: 50px;">
+														<span style="font-size: 20px; font-style: italic; text-align:
+															center; color: white;
+															font-family: Grandstander; color: white; width: 100%;">
+															PepeSora is a dive into the whimsical world of cats, capturing
+															the playful and curious <br> spirit of these mysterious creatures
+															in the crypto realm.
+														</span>
 													</div>
-												</div>
-											</div>
-										</section>
-										<section class="has_eae_slider elementor-section elementor-top-section
-											elementor-element elementor-element-6f24ab05 elementor-section-boxed
-											elementor-section-height-default elementor-section-height-default"
-											data-id="6f24ab05"
-											data-element_type="section" id="roadmap"
-											data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_top&quot;:&quot;pyramids&quot;}">
-											<div class="elementor-shape elementor-shape-top"
-												data-negative="false">
-												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"
-													preserveAspectRatio="none">
-													<path class="elementor-shape-fill"
-														d="M761.9,44.1L643.1,27.2L333.8,98L0,3.8V0l1000,0v3.9"></path>
-												</svg>
-											</div>
-											<div class="elementor-container elementor-column-gap-default">
-												<div class="has_eae_slider elementor-column elementor-col-100
-													elementor-top-column elementor-element elementor-element-49519ffc"
-													data-id="49519ffc"
-													data-element_type="column">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<section class="has_eae_slider elementor-section
-															elementor-inner-section
-															elementor-element elementor-element-4c6a3b24
-															elementor-section-boxed elementor-section-height-default
-															elementor-section-height-default" data-id="4c6a3b24"
-															data-element_type="section">
-															<div class="elementor-container elementor-column-gap-default">
-																<div class="has_eae_slider elementor-column elementor-col-100
-																	elementor-inner-column elementor-element
-																	elementor-element-3f718cf1" data-id="3f718cf1"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-234ef57a
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="234ef57a" data-element_type="widget"
-																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>Roadmap</p>
-																			</div>
-																		</div>
-																		<div class="elementor-element elementor-element-0be7790
-																			image-position-column elementor-widget
-																			elementor-widget-eae-timeline" data-id="0be7790"
-																			data-element_type="widget"
-																			data-widget_type="eae-timeline.skin1">
-																			<div class="elementor-widget-container">
-																				<section data-layout="center"
-																					data-top-offset="200" class="eae-layout-center eae-timeline
-																					eae-timeline-alternate-no eae-tl-center
-																					eae-tl-res-style-mobile eae-tl-res-layout-left">
-																					<div class="eae-timline-progress-bar"
-																						style="top: 114.375px; bottom: 154.765px; left: 560px;
-																						display: block;">
-																						<div class="eae-pb-inner-line"
-																							style="height: 0px; max-height: 611.906px;">
-																						</div>
-																					</div>
+													<div style="display: flex; margin-top: 100px; justify-content:
+														center; align-items: center;">
+														<span style="font-size: 20px; text-align: center; color: white;
+															font-family: Grandstander; color: white; width: 100%;">
+															© 2024 PepeSora• All Rights Reserved
+														</span>
 
-
-
-																					<div id="23e1f50" class="eae-timeline-item
-																						elementor-repeater-item-23e1f50
-																						custom-image-style-no image-position-">
-
-																						<div
-																							class="eae-tl-item-meta-wrapper">
-
-																						</div>
-
-																						<div class="eae-tl-icon-wrapper"
-																							id="23e1f50" href="#">
-																							<div class="eae-icon eae-icon-item_icon
-																								eae-icon-view-stacked
-																								eae-icon-shape-circle eae-icon-type-">
-																								<div class="eae-icon-wrap">
-																								</div>
-																							</div>
-																						</div>
-																						<div class="eae-tl-content-wrapper">
-																							<a>
-																								<div
-																									class="eae-tl-item-content">
-																									<div
-																										class="eae-tl-content">
-																										<div
-																											class="eae-content-inner">
-																											<div
-																												class="eae-tl-item-meta-wrapper-inner">
-																											</div>
-																											<h3
-																												class="eae-tl-item-title">
-																												Phase 1</h3>
-																											<div
-																												class="eae-tl-content-innner">
-																												<ul
-																													class="extended-services">
-																													<li
-																														class="extended-services__service">
-																														Deploy
-																														contract<img
-																															draggable="false"
-																															role="img"
-																															class="emoji"
-																															alt="✅"
-																															src="./assets/2705.svg">
-																													</li>
-																													<li
-																														class="extended-services__service">
-																														Build
-																														community<img
-																															draggable="false"
-																															role="img"
-																															class="emoji"
-																															alt="✅"
-																															src="./assets/2705.svg">
-																													</li>
-																													<li
-																														class="extended-services__service">
-																														Presale<img
-																															draggable="false"
-																															role="img"
-																															class="emoji"
-																															alt="✅"
-																															src="./assets/2705.svg">
-																													</li>
-																													<li
-																														class="extended-services__service">
-																														Distri
-																														presale
-																														participants<img
-																															draggable="false"
-																															role="img"
-																															class="emoji"
-																															alt="✅"
-																															src="./assets/2705.svg">
-																													</li>
-																												</ul>
-																											</div>
-																										</div>
-																									</div>
-																								</div>
-																							</a>
-																						</div>
-
-																					</div>
-
-																					<div id="98996cf" class="eae-timeline-item
-																						elementor-repeater-item-98996cf
-																						custom-image-style-no image-position-">
-
-																						<div
-																							class="eae-tl-item-meta-wrapper">
-
-																						</div>
-
-																						<div class="eae-tl-icon-wrapper"
-																							id="98996cf" href="#">
-																							<div class="eae-icon eae-icon-item_icon
-																								eae-icon-view-stacked
-																								eae-icon-shape-circle eae-icon-type-">
-																								<div class="eae-icon-wrap">
-																								</div>
-																							</div>
-																						</div>
-																						<div class="eae-tl-content-wrapper">
-																							<a>
-																								<div
-																									class="eae-tl-item-content">
-																									<div
-																										class="eae-tl-content">
-																										<div
-																											class="eae-content-inner">
-																											<div
-																												class="eae-tl-item-meta-wrapper-inner">
-																											</div>
-																											<h3
-																												class="eae-tl-item-title">
-																												Phase 2</h3>
-																											<div
-																												class="eae-tl-content-innner">
-																												<ul>
-																													<li
-																														class="extended-services__service">
-																														Roadmap<img
-																															draggable="false"
-																															role="img"
-																															class="emoji"
-																															alt="✅"
-																															src="./assets/2705.svg">
-																													</li>
-																													<li
-																														class="extended-services__service">
-																														Launch
-																														on
-																														raydium<img
-																															draggable="false"
-																															role="img"
-																															class="emoji"
-																															alt="✅"
-																															src="./assets/2705.svg">
-																													</li>
-																													<li
-																														class="extended-services__service">
-																														Influencer
-																														and
-																														artist<img
-																															draggable="false"
-																															role="img"
-																															class="emoji"
-																															alt="✅"
-																															src="./assets/2705.svg">
-																													</li>
-																													<li
-																														class="extended-services__service">
-																														1000
-																														holders<img
-																															draggable="false"
-																															role="img"
-																															class="emoji"
-																															alt="✅"
-																															src="./assets/2705.svg">
-																													</li>
-																												</ul>
-																											</div>
-																										</div>
-																									</div>
-																								</div>
-																							</a>
-																						</div>
-
-																					</div>
-
-																					<div id="37c8c45" class="eae-timeline-item
-																						elementor-repeater-item-37c8c45
-																						custom-image-style-no image-position-">
-
-																						<div
-																							class="eae-tl-item-meta-wrapper">
-
-																						</div>
-
-																						<div class="eae-tl-icon-wrapper"
-																							id="37c8c45" href="#">
-																							<div class="eae-icon eae-icon-item_icon
-																								eae-icon-view-stacked
-																								eae-icon-shape-circle eae-icon-type-">
-																								<div class="eae-icon-wrap">
-																								</div>
-																							</div>
-																						</div>
-																						<div class="eae-tl-content-wrapper">
-																							<a>
-																								<div
-																									class="eae-tl-item-content">
-																									<div
-																										class="eae-tl-content">
-																										<div
-																											class="eae-content-inner">
-																											<div
-																												class="eae-tl-item-meta-wrapper-inner">
-																											</div>
-																											<h3
-																												class="eae-tl-item-title">
-																												Phase 3</h3>
-																											<div
-																												class="eae-tl-content-innner">
-																												<ul
-																													class="extended-services">
-																													<li
-																														class="extended-services__service">
-																														Listing
-																														on
-																														CG<img
-																															draggable="false"
-																															role="img"
-																															class="emoji"
-																															alt="✅"
-																															src="./assets/2705.svg">
-																													</li>
-																													<li
-																														class="extended-services__service">
-																														Listing
-																														on
-																														CMC
-																													</li>
-																													<li
-																														class="extended-services__service">
-																														More
-																														influencer
-																													</li>
-																													<li
-																														class="extended-services__service">
-																														Social
-																														media
-																														expansion
-																													</li>
-																													<li
-																														class="extended-services__service">
-																														5000
-																														holders
-																													</li>
-																													<li>CEX
-																														listing
-																													</li>
-																												</ul>
-																											</div>
-																										</div>
-																									</div>
-																								</div>
-																							</a>
-																						</div>
-
-																					</div>
-																				</section>
-
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</section>
 													</div>
-												</div>
-											</div>
-										</section>
-										<section class="has_eae_slider elementor-section elementor-top-section
-											elementor-element elementor-element-62043a7b elementor-section-boxed
-											elementor-section-height-default elementor-section-height-default"
-											data-id="62043a7b"
-											data-element_type="section" id="socialmedia"
-											data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_top&quot;:&quot;pyramids&quot;}">
-											<div class="elementor-shape elementor-shape-top"
-												data-negative="false">
-												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"
-													preserveAspectRatio="none">
-													<path class="elementor-shape-fill"
-														d="M761.9,44.1L643.1,27.2L333.8,98L0,3.8V0l1000,0v3.9"></path>
-												</svg>
-											</div>
-											<div class="elementor-container elementor-column-gap-default">
-												<div class="has_eae_slider elementor-column elementor-col-100
-													elementor-top-column elementor-element elementor-element-68fd2bb8"
-													data-id="68fd2bb8"
-													data-element_type="column">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<section class="has_eae_slider elementor-section
-															elementor-inner-section
-															elementor-element elementor-element-70e516ec
-															elementor-section-full_width elementor-section-height-default
-															elementor-section-height-default" data-id="70e516ec"
-															data-element_type="section"
-															data-settings="{&quot;animation&quot;:&quot;none&quot;}">
-															<div class="elementor-container elementor-column-gap-no">
-																<div class="has_eae_slider elementor-column elementor-col-50
-																	elementor-inner-column elementor-element
-																	elementor-element-2a9468f1" data-id="2a9468f1"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-1140ca83
-																			elementor-widget elementor-widget-image" data-id="1140ca83"
-																			data-element_type="widget"
-																			data-widget_type="image.default">
-																			<div class="elementor-widget-container">
-																				<img loading="lazy" decoding="async"
-																					width="512" height="512"
-																					src="./assets/images/panda3.png"
-																					class="attachment-full size-full wp-image-50"
-																					alt=""
-																					sizes="(max-width: 512px) 100vw, 512px">
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="has_eae_slider elementor-column elementor-col-50
-																	elementor-inner-column elementor-element
-																	elementor-element-6078b21b" data-id="6078b21b"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-2debe87f
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="2debe87f" data-element_type="widget"
-																			data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<p>Follow ArbPanda on social media</p>
-																			</div>
-																		</div>
-																		<div class="elementor-element elementor-element-f66d0f9
-																			elementor-shape-circle e-grid-align-mobile-center
-																			e-grid-align-left elementor-grid-0 elementor-widget
-																			elementor-widget-social-icons" data-id="f66d0f9"
-																			data-element_type="widget"
-																			data-settings="{&quot;_animation&quot;:&quot;none&quot;}"
-																			data-widget_type="social-icons.default">
-																			<div class="elementor-widget-container">
-																				<div
-																					class="elementor-social-icons-wrapper elementor-grid">
-																					<span class="elementor-grid-item">
-																						<a class="elementor-icon elementor-social-icon
-																							elementor-social-icon-twitter elementor-animation-shrink
-																							elementor-repeater-item-222dd7a"
-																							href="https://twitter.com/Arbpanda" target="_blank">
-																							<span
-																								class="elementor-screen-only">Twitter</span>
-																							<svg class="e-font-icon-svg e-fab-twitter"
-																								viewBox="0 0 512 512"
-																								xmlns="http://www.w3.org/2000/svg">
-																								<path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645
-																									0
-																									138.72-105.583 298.558-298.558 298.558-59.452
-																									0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299
-																									25.34 1.299 49.055 0 94.213-16.568
-																									130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772
-																									6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3
-																									27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969
-																									7.797 30.214 12.67 47.431
-																									13.319-28.264-18.843-46.781-51.005-46.781-87.391
-																									0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3
-																									105.258 216.365
-																									109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828
-																									46.782-104.934 104.934-104.934 30.213 0 57.502 12.67
-																									76.67 33.137 23.715-4.548 46.456-13.32
-																									66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827
-																									21.117-2.273 41.584-8.122 60.426-16.243-14.292
-																									20.791-32.161 39.308-52.628 54.253z">
-																								</path>
-																							</svg> </a>
-																					</span>
-																					<span class="elementor-grid-item">
-																						<a class="elementor-icon elementor-social-icon
-																							elementor-social-icon-telegram elementor-animation-shrink
-																							elementor-repeater-item-531e428"
-																							href="https://t.me/arbpandatoken" target="_blank">
-																							<span
-																								class="elementor-screen-only">Telegram</span>
-																							<svg class="e-font-icon-svg e-fab-telegram"
-																								viewBox="0 0 496 512"
-																								xmlns="http://www.w3.org/2000/svg">
-																								<path d="M248 8C111 8 0 119 0 256s111 248 248 248
-																									248-111
-																									248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3
-																									13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3
-																									3.3-6.1 6.1-12.5 6.1l4.4-63.1
-																									114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142
-																									89.4-61.2-19.1c-13.3-4.2-13.6-13.3
-																									2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z">
-																								</path>
-																							</svg> </a>
-																					</span>
-																				</div>
-																			</div>
-																		</div>
-																		<div class="elementor-element elementor-element-2cf1febf
-																			elementor-widget elementor-widget-video" data-id="2cf1febf"
-																			data-element_type="widget"
-																			data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=L3tsYC5OYhQ&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}"
-																			data-widget_type="video.default">
-																			<div class="elementor-widget-container">
-																				<style>
-																				/*! elementor - v3.19.0 - 29-01-2024 */
-																				.elementor-widget-video .elementor-widget-container {
-																					overflow: hidden;
-																					transform: translateZ(0)
-																				}
-
-																				.elementor-widget-video .elementor-wrapper {
-																					aspect-ratio: var(--video-aspect-ratio)
-																				}
-
-																				.elementor-widget-video .elementor-wrapper iframe,
-																				.elementor-widget-video .elementor-wrapper video {
-																					height: 100%;
-																					width: 100%;
-																					display: flex;
-																					border: none;
-																					background-color: #000
-																				}
-
-																				@supports not (aspect-ratio:1/1) {
-																					.elementor-widget-video .elementor-wrapper {
-																						position: relative;
-																						overflow: hidden;
-																						height: 0;
-																						padding-bottom: calc(100% / var(--video-aspect-ratio))
-																					}
-
-																					.elementor-widget-video .elementor-wrapper iframe,
-																					.elementor-widget-video .elementor-wrapper video {
-																						position: absolute;
-																						top: 0;
-																						right: 0;
-																						bottom: 0;
-																						left: 0
-																					}
-																				}
-
-																				.elementor-widget-video .elementor-open-inline .elementor-custom-embed-image-overlay {
-																					position: absolute;
-																					top: 0;
-																					right: 0;
-																					bottom: 0;
-																					left: 0;
-																					background-size: cover;
-																					background-position: 50%
-																				}
-
-																				.elementor-widget-video .elementor-custom-embed-image-overlay {
-																					cursor: pointer;
-																					text-align: center
-																				}
-
-																				.elementor-widget-video .elementor-custom-embed-image-overlay:hover .elementor-custom-embed-play i {
-																					opacity: 1
-																				}
-
-																				.elementor-widget-video .elementor-custom-embed-image-overlay img {
-																					display: block;
-																					width: 100%;
-																					aspect-ratio: var(--video-aspect-ratio);
-																					-o-object-fit: cover;
-																					object-fit: cover;
-																					-o-object-position: center center;
-																					object-position: center center
-																				}
-
-																				@supports not (aspect-ratio:1/1) {
-																					.elementor-widget-video .elementor-custom-embed-image-overlay {
-																						position: relative;
-																						overflow: hidden;
-																						height: 0;
-																						padding-bottom: calc(100% / var(--video-aspect-ratio))
-																					}
-
-																					.elementor-widget-video .elementor-custom-embed-image-overlay img {
-																						position: absolute;
-																						top: 0;
-																						right: 0;
-																						bottom: 0;
-																						left: 0
-																					}
-																				}
-
-																				.elementor-widget-video .e-hosted-video .elementor-video {
-																					-o-object-fit: cover;
-																					object-fit: cover
-																				}
-
-																				.e-con-inner>.elementor-widget-video,
-																				.e-con>.elementor-widget-video {
-																					width: var(--container-widget-width);
-																					--flex-grow: var(--container-widget-flex-grow)
-																				}
-																			</style>
-																				<div
-																					class="elementor-wrapper elementor-open-inline">
-																					<div class="elementor-video"></div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</section>
-													</div>
-												</div>
-											</div>
-										</section>
-										<section class="has_eae_slider elementor-section elementor-top-section
-											elementor-element elementor-element-324d287b elementor-section-boxed
-											elementor-section-height-default elementor-section-height-default"
-											data-id="324d287b"
-											data-element_type="section"
-											data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-											<div class="elementor-container elementor-column-gap-default">
-												<div class="has_eae_slider elementor-column elementor-col-100
-													elementor-top-column elementor-element elementor-element-383399fa"
-													data-id="383399fa"
-													data-element_type="column"
-													data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
-													<div class="elementor-widget-wrap elementor-element-populated">
-														<section class="has_eae_slider elementor-section
-															elementor-inner-section
-															elementor-element elementor-element-5434d12e
-															elementor-section-boxed elementor-section-height-default
-															elementor-section-height-default" data-id="5434d12e"
-															data-element_type="section">
-															<div class="elementor-container elementor-column-gap-default">
-																<div class="has_eae_slider elementor-column elementor-col-33
-																	elementor-inner-column elementor-element
-																	elementor-element-13db608a" data-id="13db608a"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-2ca6fa7e
-																			elementor-widget elementor-widget-image" data-id="2ca6fa7e"
-																			data-element_type="widget"
-																			data-widget_type="image.default">
-																			<div class="elementor-widget-container">
-
-																			</div>
-																		</div>
-																		<div class="elementor-element elementor-element-54d19909
-																			elementor-shape-circle e-grid-align-mobile-center
-																			e-grid-align-left elementor-grid-0 elementor-widget
-																			elementor-widget-social-icons" data-id="54d19909"
-																			data-element_type="widget"
-																			data-settings="{&quot;_animation&quot;:&quot;none&quot;}"
-																			data-widget_type="social-icons.default">
-																			<div class="elementor-widget-container">
-																				<div
-																					class="elementor-social-icons-wrapper elementor-grid">
-																					<span class="elementor-grid-item">
-																						<a class="elementor-icon elementor-social-icon
-																							elementor-social-icon-twitter elementor-animation-shrink
-																							elementor-repeater-item-222dd7a"
-																							href="https://twitter.com/Arbpanda" target="_blank">
-																							<span
-																								class="elementor-screen-only">Twitter</span>
-																							<svg class="e-font-icon-svg e-fab-twitter"
-																								viewBox="0 0 512 512"
-																								xmlns="http://www.w3.org/2000/svg">
-																								<path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645
-																									0
-																									138.72-105.583 298.558-298.558 298.558-59.452
-																									0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299
-																									25.34 1.299 49.055 0 94.213-16.568
-																									130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772
-																									6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3
-																									27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969
-																									7.797 30.214 12.67 47.431
-																									13.319-28.264-18.843-46.781-51.005-46.781-87.391
-																									0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3
-																									105.258 216.365
-																									109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828
-																									46.782-104.934 104.934-104.934 30.213 0 57.502 12.67
-																									76.67 33.137 23.715-4.548 46.456-13.32
-																									66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827
-																									21.117-2.273 41.584-8.122 60.426-16.243-14.292
-																									20.791-32.161 39.308-52.628 54.253z">
-																								</path>
-																							</svg> </a>
-																					</span>
-																					<span class="elementor-grid-item">
-																						<a class="elementor-icon elementor-social-icon
-																							elementor-social-icon-telegram elementor-animation-shrink
-																							elementor-repeater-item-531e428"
-																							href="https://t.me/arbpandatoken" target="_blank">
-																							<span
-																								class="elementor-screen-only">Telegram</span>
-																							<svg class="e-font-icon-svg e-fab-telegram"
-																								viewBox="0 0 496 512"
-																								xmlns="http://www.w3.org/2000/svg">
-																								<path d="M248 8C111 8 0 119 0 256s111 248 248 248
-																									248-111
-																									248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3
-																									13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3
-																									3.3-6.1 6.1-12.5 6.1l4.4-63.1
-																									114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142
-																									89.4-61.2-19.1c-13.3-4.2-13.6-13.3
-																									2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z">
-																								</path>
-																							</svg> </a>
-																					</span>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="has_eae_slider elementor-column elementor-col-33
-																	elementor-inner-column elementor-element
-																	elementor-element-2c5bb1ed" data-id="2c5bb1ed"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-6ddbcb7b
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="6ddbcb7b" data-element_type="widget"
-																			data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<div id="comp-ldk7vt9e"
-																					class="comp-ldk7vt9e SPY_vo"
-																					data-angle="0"
-																					data-angle-style-location="style"
-																					data-screen-in-hide="done">
-																					<div class=""
-																						data-mesh-id="comp-ldk7vt9einlineContent"
-																						data-testid="inline-content">
-																						<div
-																							data-mesh-id="comp-ldk7vt9einlineContent-gridContainer"
-																							data-testid="mesh-container-content">
-																							<div id="comp-ldk79o9n"
-																								class="KcpHeO tz5f0K comp-ldk79o9n wixui-rich-text"
-																								data-testid="richTextElement">
-																								<p
-																									class="font_9 wixui-rich-text__text">
-																									ArbPanda is a dive into
-																									the whimsical world of
-																									cats, capturing the
-																									playful and curious
-																									spirit of these
-																									mysterious creatures in
-																									the crypto realm.</p>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="has_eae_slider elementor-column elementor-col-33
-																	elementor-inner-column elementor-element
-																	elementor-element-1dd15c23" data-id="1dd15c23"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-92be353
-																			e-transform e-transform elementor-widget
-																			elementor-widget-image" data-id="92be353"
-																			data-element_type="widget"
-																			data-settings="{&quot;_transform_translateX_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:21,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-111,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-22,&quot;sizes&quot;:[]},&quot;_transform_scale_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.2,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.8,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
-																			data-widget_type="image.default">
-																			<div class="elementor-widget-container">
-																				<img decoding="async" width="512"
-																					height="512"
-																					src="./assets/images/logo.png"
-																					class="attachment-large size-large wp-image-50"
-																					alt=""
-																					sizes="(max-width: 512px) 100vw, 512px">
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</section>
-														<section class="has_eae_slider elementor-section
-															elementor-inner-section
-															elementor-element elementor-element-18d2b9ad
-															elementor-section-boxed elementor-section-height-default
-															elementor-section-height-default" data-id="18d2b9ad"
-															data-element_type="section">
-															<div class="elementor-container elementor-column-gap-default">
-																<div class="has_eae_slider elementor-column elementor-col-100
-																	elementor-inner-column elementor-element
-																	elementor-element-48beb279" data-id="48beb279"
-																	data-element_type="column">
-																	<div
-																		class="elementor-widget-wrap elementor-element-populated">
-																		<div class="elementor-element elementor-element-76a8479a
-																			elementor-widget elementor-widget-text-editor"
-																			data-id="76a8479a" data-element_type="widget"
-																			data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}"
-																			data-widget_type="text-editor.default">
-																			<div class="elementor-widget-container">
-																				<div id="comp-ldk7vt9e"
-																					class="comp-ldk7vt9e SPY_vo"
-																					data-angle="0"
-																					data-angle-style-location="style"
-																					data-screen-in-hide="done">
-																					<div class=""
-																						data-mesh-id="comp-ldk7vt9einlineContent"
-																						data-testid="inline-content">
-																						<div
-																							data-mesh-id="comp-ldk7vt9einlineContent-gridContainer"
-																							data-testid="mesh-container-content">
-																							<div id="comp-ldk79o9n"
-																								class="KcpHeO tz5f0K comp-ldk79o9n wixui-rich-text"
-																								data-testid="richTextElement">
-																								<p
-																									class="font_9 wixui-rich-text__text">
-																									© 2024 ArbPanda• All
-																									Rights Reserved</p>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</section>
-													</div>
-												</div>
-											</div>
-										</section>
-									</div>
+												</section>
+											</section>
 
 
 
-								</div><!-- .entry-content .clear -->
+										</div>
 
 
 
-							</article><!-- #post-## -->
-
-						</main><!-- #main -->
+									</div><!-- .entry-content .clear -->
 
 
-					</div><!-- #primary -->
+
+								</article><!-- #post-## -->
+
+							</main><!-- #main -->
 
 
-				</div> <!-- ast-container -->
-			</div><!-- #content -->
-			<footer class="site-footer" id="colophon"
-				itemtype="https://schema.org/WPFooter" itemscope="itemscope"
-				itemid="#colophon">
-			</footer><!-- #colophon -->
-		</div><!-- #page -->
+						</div><!-- #primary -->
 
-		<div id="ast-scroll-top" tabindex="0" class="ast-scroll-top-icon
-			ast-scroll-to-top-right" data-on-devices="both" style="display: none;">
-			<span class="ast-icon icon-arrow"><svg class="ast-arrow-svg"
-					xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
-					width="26px" height="16.043px"
-					viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043"
-					xml:space="preserve">
-					<path
-						d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
-				</svg></span> <span class="screen-reader-text">Retour en haut</span>
-		</div>
-		<link rel="stylesheet" id="e-animations-css"
-			href="./assets/animations.min.css" media="all">
-		<script>
+
+					</div> <!-- ast-container -->
+				</div><!-- #content -->
+				<footer class="site-footer" id="colophon"
+					itemtype="https://schema.org/WPFooter" itemscope="itemscope"
+					itemid="#colophon">
+				</footer><!-- #colophon -->
+			</div><!-- #page -->
+
+			<div id="ast-scroll-top" tabindex="0" class="ast-scroll-top-icon
+				ast-scroll-to-top-right" data-on-devices="both" style="display: none;">
+				<span class="ast-icon icon-arrow"><svg class="ast-arrow-svg"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
+						width="26px" height="16.043px"
+						viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043"
+						xml:space="preserve">
+						<path
+							d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+					</svg></span> <span class="screen-reader-text">Retour en haut</span>
+			</div>
+			<link rel="stylesheet" id="e-animations-css"
+				href="./assets/animations.min.css" media="all">
+			<script>
             function buyModalOpen(){
 				document.getElementById('buyModalOpen').style.display='flex';
 			}
@@ -6166,33 +4673,33 @@
 				document.getElementById('airdropModalOpen').style.display='flex';
 			}
 	</script>
-		<script id="astra-theme-js-js-extra">
+			<script id="astra-theme-js-js-extra">
 		var astra = { "break_point": "921", "isRtl": "", "is_scroll_to_id": "1", "is_scroll_to_top": "1", "is_header_footer_builder_active": "1" };
 	</script>
-		<script src="./assets/frontend.min.js" id="astra-theme-js-js"></script>
-		<script src="./assets/eae.min.js" id="eae-main-js"></script>
-		<script src="./assets/index.min.js" id="eae-index-js"></script>
-		<script src="./assets/v4-shims.min.js" id="font-awesome-4-shim-js"></script>
-		<script src="./assets/animated-main.min.js" id="animated-main-js"></script>
-		<script src="./assets/particles.min.js" id="eae-particles-js"></script>
-		<script src="./assets/magnific.min.js" id="wts-magnific-js"></script>
-		<script src="./assets/vegas.min.js" id="vegas-js"></script>
-		<script src="./assets/frontend.js" id="hfe-frontend-js-js"></script>
-		<script src="./assets/webpack.runtime.min.js"
-			id="elementor-webpack-runtime-js"></script>
-		<script src="./assets/frontend-modules.min.js"
-			id="elementor-frontend-modules-js"></script>
-		<script src="./assets/waypoints.min.js" id="elementor-waypoints-js"></script>
-		<script src="./assets/core.min.js" id="jquery-ui-core-js"></script>
-		<script id="elementor-frontend-js-before">
+			<script src="./assets/frontend.min.js" id="astra-theme-js-js"></script>
+			<script src="./assets/eae.min.js" id="eae-main-js"></script>
+			<script src="./assets/index.min.js" id="eae-index-js"></script>
+			<script src="./assets/v4-shims.min.js" id="font-awesome-4-shim-js"></script>
+			<script src="./assets/animated-main.min.js" id="animated-main-js"></script>
+			<script src="./assets/particles.min.js" id="eae-particles-js"></script>
+			<script src="./assets/magnific.min.js" id="wts-magnific-js"></script>
+			<script src="./assets/vegas.min.js" id="vegas-js"></script>
+			<script src="./assets/frontend.js" id="hfe-frontend-js-js"></script>
+			<script src="./assets/webpack.runtime.min.js"
+				id="elementor-webpack-runtime-js"></script>
+			<script src="./assets/frontend-modules.min.js"
+				id="elementor-frontend-modules-js"></script>
+			<script src="./assets/waypoints.min.js" id="elementor-waypoints-js"></script>
+			<script src="./assets/core.min.js" id="jquery-ui-core-js"></script>
+			<script id="elementor-frontend-js-before">
 		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Partager sur Facebook", "shareOnTwitter": "Partager sur Twitter", "pinIt": "L\u2019\u00e9pingler", "download": "T\u00e9l\u00e9charger", "downloadImage": "T\u00e9l\u00e9charger une image", "fullscreen": "Plein \u00e9cran", "zoom": "Zoom", "share": "Partager", "playVideo": "Lire la vid\u00e9o", "previous": "Pr\u00e9c\u00e9dent", "next": "Suivant", "close": "Fermer", "a11yCarouselWrapperAriaLabel": "Carousel | Scroll horizontal: Fl\u00e8che gauche & droite", "a11yCarouselPrevSlideMessage": "Diapositive pr\u00e9c\u00e9dente", "a11yCarouselNextSlideMessage": "Diapositive suivante", "a11yCarouselFirstSlideMessage": "Ceci est la premi\u00e8re diapositive", "a11yCarouselLastSlideMessage": "Ceci est la derni\u00e8re diapositive", "a11yCarouselPaginationBulletMessage": "Aller \u00e0 la diapositive" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Portrait mobile", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Paysage", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablette en mode portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablette en mode paysage", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Portable", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "\u00c9cran large", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } }, "version": "3.19.0", "is_static": false, "experimentalFeatures": { "e_optimized_assets_loading": true, "e_optimized_css_loading": true, "e_font_icon_svg": true, "additional_custom_breakpoints": true, "container": true, "e_swiper_latest": true, "block_editor_assets_optimize": true, "ai-layout": true, "landing-pages": true, "e_image_loading_optimization": true, "e_global_styleguide": true }, "urls": { "assets": "https:\/\/silly-cat.com\/wp-content\/plugins\/elementor\/assets\/" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 9, "title": "silly-cat.com", "excerpt": "", "featuredImage": false } };
 	</script>
-		<script src="./assets/frontend.min(1).js" id="elementor-frontend-js"></script><span
-			id="elementor-device-mode"
-			class="elementor-screen-only"></span>
-		<script>
+			<script src="./assets/frontend.min(1).js" id="elementor-frontend-js"></script><span
+				id="elementor-device-mode"
+				class="elementor-screen-only"></span>
+			<script>
 		/(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () { var t, e = location.hash.substring(1); /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus()) }, !1);
 	</script>
-	</body>
+		</body>
 
-</html>
+	</html>
